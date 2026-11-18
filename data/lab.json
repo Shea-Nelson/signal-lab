@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T08:20:31-05:00",
+  "generated_at": "2026-11-18T11:57:14-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -39,8 +39,8 @@
       "rules_md": "# Reddit only\n\n**Allowed input:** ApeWisdom stock mention data (`https://apewisdom.io/api/v1.0/filter/all-stocks/page/1`): rank, mentions, mentions 24h ago, upvotes, rank 24h ago. Reading Reddit post titles from r/wallstreetbets, r/stocks, r/investing is also allowed when reachable (Reddit JSON often hangs; ApeWisdom is the reliable feed).\n\n**Not allowed:** news, X, price charts or moving averages, the runner's own market view.\n\n**Playbook:**\n- Buy names with the most mentions and rising mention counts (mentions now vs 24h ago), up to 2 or 3 positions, $25 to $45 each.\n- Skip sub-$5 stocks and one-day mention spikes from tiny caps (pump risk). ETFs like SPY or QQQ count if they rank.\n- Sell when a holding falls out of the top 15 by mentions or its mentions drop by half day over day.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
       "start_time": "2026-11-18T08:12:35-05:00",
       "starting_cash": 100.0,
-      "cash": 25.0,
-      "settled_cash": 25.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
       "unsettled": [],
       "positions": [
         {
@@ -54,6 +54,12 @@
           "shares": 0.04829118203016129,
           "cost": 35.0,
           "avg_price": 724.77
+        },
+        {
+          "symbol": "AMD",
+          "shares": 0.049397351706189474,
+          "cost": 25.0,
+          "avg_price": 506.1000061035156
         }
       ],
       "trades": [
@@ -108,6 +114,32 @@
             }
           ],
           "earliest_sell": "2026-11-18T08:13:41-05:00"
+        },
+        {
+          "id": "3f908bda6a906def",
+          "time": "2026-11-18T11:57:00-05:00",
+          "symbol": "AMD",
+          "price": 506.1000061035156,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-18 11:56 ET",
+          "quote_time": "2026-11-18T11:56:59-05:00",
+          "session": "regular",
+          "reason": "Noon: AMD jumped to #4 on ApeWisdom with 162 mentions vs 100 24h ago (+62%, rank 5->4), large cap well above $5, so a rising top-ranked name per playbook. NVDA still #1 (2189 vs 1351, rising); MU #5 at 121 vs 157 (-23%, not halved, still top 15) so no sell. Deploying the last $25 into AMD.",
+          "evidence": [
+            "ApeWisdom all-stocks page 1 at 11:56 ET: NVDA 2189 (1351), SPY 310, QQQ 186, AMD 162 (100), MU 121 (157), NBIS 111 (65)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1156.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.049397351706189474,
+          "amount": 25.0,
+          "funding": [
+            {
+              "amount": 25.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T11:57:00-05:00"
         }
       ],
       "decisions": [
@@ -138,6 +170,46 @@
           ],
           "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
           "trade_id": "1c08a06d60139ef4"
+        },
+        {
+          "id": "0629133eb78a24d6",
+          "time": "2026-11-18T09:59:38-05:00",
+          "action": "hold",
+          "reason": "10 AM: NVDA still #1 and mentions nearly doubled (2254 vs 1168 24h ago); MU #6, 137 vs 116, still top 15 and rising. No sell trigger; no new name both top-ranked and rising worth a 3rd slot (AMD 152 up but would leave little cash).",
+          "evidence": [
+            "ApeWisdom 9:59 ET: NVDA 2254/1168, SPY 348, QQQ 204, AMD 152/105, MU 137/116",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_0959.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "f82a4e03ed34f2e5",
+          "time": "2026-11-18T10:56:34-05:00",
+          "action": "hold",
+          "reason": "11 AM: NVDA still #1, mentions 2235 vs 1201 24h ago (rising). MU #5, 114 vs 137 (down 17%, not halved, still top 15), so no sell trigger. No new top-ranked rising name worth a slot.",
+          "evidence": [
+            "ApeWisdom 10:56 ET: NVDA 2235/1201, SPY 316/336, QQQ 201/185, AMD 162/101, MU 114/137",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1056.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "3f908bda6a906def",
+          "time": "2026-11-18T11:57:00-05:00",
+          "action": "buy",
+          "reason": "Noon: AMD jumped to #4 on ApeWisdom with 162 mentions vs 100 24h ago (+62%, rank 5->4), large cap well above $5, so a rising top-ranked name per playbook. NVDA still #1 (2189 vs 1351, rising); MU #5 at 121 vs 157 (-23%, not halved, still top 15) so no sell. Deploying the last $25 into AMD.",
+          "evidence": [
+            "ApeWisdom all-stocks page 1 at 11:56 ET: NVDA 2189 (1351), SPY 310, QQQ 186, AMD 162 (100), MU 121 (157), NBIS 111 (65)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1156.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
+          "trade_id": "3f908bda6a906def"
         }
       ],
       "history": [
@@ -155,19 +227,40 @@
             "BUY NVDA $40.00: Reddit's #1 name by a mile: 2,218 mentions vs 1,233 a day ago (+80%), 9,754 upvotes.",
             "BUY MU $35.00: Top-5 Reddit name with rising chatter: 151 mentions vs 124 (+22%), holding rank 4-5. Skipped SLS (#2, a 10x one-day mention spike in a small-cap biotech, pump risk) and SPY/QQQ (index chatter is mostly hedging talk). $25 cash kept."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 98.12921,
+          "decisions": [
+            "HOLD: 10 AM: NVDA still #1 and mentions nearly doubled (2254 vs 1168 24h ago); MU #6, 137 vs 116, still top 15 and rising. No sell trigger; no new name both top-ranked and rising worth a 3rd slot (AMD 152 up but would leave little cash)."
+          ]
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 97.267706,
+          "decisions": [
+            "HOLD: 11 AM: NVDA still #1, mentions 2235 vs 1201 24h ago (rising). MU #5, 114 vs 137 (down 17%, not halved, still top 15), so no sell trigger. No new top-ranked rising name worth a slot."
+          ]
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 96.213842,
+          "decisions": [
+            "BUY AMD $25.00: Noon: AMD jumped to #4 on ApeWisdom with 162 mentions vs 100 24h ago (+62%, rank 5->4), large cap well above $5, so a rising top-ranked name per playbook. NVDA still #1 (2189 vs 1351, rising); MU #5 at 121 vs 157 (-23%, not halved, still top 15) so no sell. Deploying the last $25 into AMD."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.088295,
-        "return_pct": 0.088,
-        "trades": 2,
+        "current_value": 96.213842,
+        "return_pct": -3.786,
+        "trades": 3,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "max_drawdown_pct": -3.871,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     },
     {
@@ -180,21 +273,21 @@
       "rules_md": "# X only\n\n**Allowed input:** public X posts (`x` namespace `search_posts_all`, recent premarket and market posts, cashtags) and X News stories (`search_news`, which are summaries of X posts).\n\n**Not allowed:** web news articles, Reddit, price charts or moving averages, the runner's own market view.\n\n**Playbook:**\n- Buy the tickers and themes X is most bullish on right now, weighting posts with real engagement and multiple independent accounts, up to 2 or 3 positions.\n- Hold back cash when X posts warn of a fade or a risk-off tape.\n- Sell when X sentiment on a holding turns clearly negative or the theme stops being discussed.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
       "start_time": "2026-11-18T08:12:35-05:00",
       "starting_cash": 100.0,
-      "cash": 30.0,
+      "cash": 58.791267,
       "settled_cash": 30.0,
-      "unsettled": [],
+      "unsettled": [
+        {
+          "amount": 28.791267,
+          "source": "NVDA sale 2026-11-18T10:56:40-05:00",
+          "settles": "2026-11-19T09:30:00-05:00"
+        }
+      ],
       "positions": [
         {
           "symbol": "SMH",
           "shares": 0.08528784648187633,
           "cost": 40.0,
           "avg_price": 469.0
-        },
-        {
-          "symbol": "NVDA",
-          "shares": 0.18820577164366373,
-          "cost": 30.0,
-          "avg_price": 159.4
         }
       ],
       "trades": [
@@ -249,6 +342,28 @@
             }
           ],
           "earliest_sell": "2026-11-18T08:13:41-05:00"
+        },
+        {
+          "id": "9ec6a83206a10c3f",
+          "time": "2026-11-18T10:56:40-05:00",
+          "symbol": "NVDA",
+          "price": 152.97760009765625,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-18 10:56 ET",
+          "quote_time": "2026-11-18T10:56:32-05:00",
+          "session": "regular",
+          "reason": "11 AM: X sentiment on NVDA turned clearly negative: X News 'NVIDIA Stock Plunges After Record Earnings Amid CEO Drama', Senate testimony request over the Huang/Megaspeed scandal, China Hopper halt; posts hostile to the board. Selling NVDA, keeping SMH (AI/semis theme still active with the ANT IPO tomorrow).",
+          "evidence": [
+            "X News 2h + search_posts_all since 10:05 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1100.md"
+            }
+          ],
+          "side": "sell",
+          "shares": 0.18820577164366373,
+          "amount": 28.791267,
+          "cost_basis": 30.0,
+          "realized_pnl": -1.208733,
+          "proceeds_settle": "2026-11-19T09:30:00-05:00"
         }
       ],
       "decisions": [
@@ -279,6 +394,46 @@
           ],
           "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
           "trade_id": "2696402277a67f42"
+        },
+        {
+          "id": "de4cedb1e1611543",
+          "time": "2026-11-18T09:59:39-05:00",
+          "action": "hold",
+          "reason": "10 AM: X mixed. Many posts say NVDA's earnings pop fully faded at the open, but others stay bullish into the ANT IPO and semis chatter is still heavy. Not clearly negative yet; keep NVDA/SMH and $30 cash per the premarket fade warnings.",
+          "evidence": [
+            "X posts since 9:35 ET + X News 3h",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1000.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "9ec6a83206a10c3f",
+          "time": "2026-11-18T10:56:40-05:00",
+          "action": "sell",
+          "reason": "11 AM: X sentiment on NVDA turned clearly negative: X News 'NVIDIA Stock Plunges After Record Earnings Amid CEO Drama', Senate testimony request over the Huang/Megaspeed scandal, China Hopper halt; posts hostile to the board. Selling NVDA, keeping SMH (AI/semis theme still active with the ANT IPO tomorrow).",
+          "evidence": [
+            "X News 2h + search_posts_all since 10:05 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1100.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
+          "trade_id": "9ec6a83206a10c3f"
+        },
+        {
+          "id": "b9022f135372c6ad",
+          "time": "2026-11-18T11:57:01-05:00",
+          "action": "hold",
+          "reason": "Noon: X News says US stocks plunged after a reported US strike on an Iranian missile site (posts claim $500-660B wiped in 15 min) and trader threads preach 'no trade is also a trade'. Playbook holds back cash on a risk-off tape. No clear negative X turn on SMH specifically, so keep it. Also at the 3-trades/day limit.",
+          "evidence": [
+            "X News 11:38 ET 'U.S. Stocks Plunge After Strike on Iranian Missile Site'; AltIndex X mentions NVDA 9.8k, SPCX/AMD/TSLA/NBIS ~1.3-1.4k",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1156.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
         }
       ],
       "history": [
@@ -296,19 +451,40 @@
             "BUY SMH $40.00: X is loudest about a semiconductor rebound after Nvidia's beat: several premarket briefs say chips are leading (SOXX +2.5%, MU +2.5%). The semis ETF spreads that theme.",
             "BUY NVDA $30.00: X News headline story: record quarter, $130B guide, $150B buyback, 'shares climbed'. Sized small and $30 kept in cash because several X traders warn the premarket pop may fade ('half of that pop is already gone', 'bounce in a downtrend')."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 98.662139,
+          "decisions": [
+            "HOLD: 10 AM: X mixed. Many posts say NVDA's earnings pop fully faded at the open, but others stay bullish into the ANT IPO and semis chatter is still heavy. Not clearly negative yet; keep NVDA/SMH and $30 cash per the premarket fade warnings."
+          ]
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 98.007898,
+          "decisions": [
+            "SELL NVDA $28.79: 11 AM: X sentiment on NVDA turned clearly negative: X News 'NVIDIA Stock Plunges After Record Earnings Amid CEO Drama', Senate testimony request over the Huang/Megaspeed scandal, China Hopper halt; posts hostile to the board. Selling NVDA, keeping SMH (AI/semis theme still active with the ANT IPO tomorrow)."
+          ]
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 97.500861,
+          "decisions": [
+            "HOLD: Noon: X News says US stocks plunged after a reported US strike on an Iranian missile site (posts claim $500-660B wiped in 15 min) and trader threads preach 'no trade is also a trade'. Playbook holds back cash on a risk-off tape. No clear negative X turn on SMH specifically, so keep it. Also at the 3-trades/day limit."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.059106,
-        "return_pct": 0.059,
-        "trades": 2,
-        "closed_sells": 0,
+        "current_value": 97.500861,
+        "return_pct": -2.499,
+        "trades": 3,
+        "closed_sells": 1,
         "wins": 0,
-        "win_rate": null,
-        "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "win_rate": 0.0,
+        "realized_pnl": -1.208733,
+        "max_drawdown_pct": -2.557,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     },
     {
@@ -321,16 +497,16 @@
       "rules_md": "# News only\n\n**Allowed input:** published financial news found by web search or news sites (CNBC, Reuters, Investing.com, StockAnalysis, MarketWatch, company press releases): earnings results, guidance, deals, analyst actions, economic data.\n\n**Not allowed:** X posts or X News, Reddit, price charts or moving averages beyond the price needed to size a trade.\n\n**Playbook:**\n- Buy companies with clear positive fundamental news today (beat-and-raise earnings, raised guidance, big buybacks, deals), up to 2 or 3 positions.\n- Avoid names whose news is mixed (beat with weaker margins or cut guidance).\n- Sell when the news turns negative (downgrade, guidance cut, probe) or the catalyst has passed and newer catalysts look better.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
       "start_time": "2026-11-18T08:12:35-05:00",
       "starting_cash": 100.0,
-      "cash": 25.0,
+      "cash": 63.337952,
       "settled_cash": 25.0,
-      "unsettled": [],
-      "positions": [
+      "unsettled": [
         {
-          "symbol": "NVDA",
-          "shares": 0.250886413058136,
-          "cost": 40.0,
-          "avg_price": 159.4347
-        },
+          "amount": 38.337952,
+          "source": "NVDA sale 2026-11-18T10:56:40-05:00",
+          "settles": "2026-11-19T09:30:00-05:00"
+        }
+      ],
+      "positions": [
         {
           "symbol": "TGT",
           "shares": 0.2215330084182543,
@@ -390,6 +566,28 @@
             }
           ],
           "earliest_sell": "2026-11-18T08:13:42-05:00"
+        },
+        {
+          "id": "32503b7d1d447065",
+          "time": "2026-11-18T10:56:40-05:00",
+          "symbol": "NVDA",
+          "price": 152.80999755859375,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-18 10:56 ET",
+          "quote_time": "2026-11-18T10:56:39-05:00",
+          "session": "regular",
+          "reason": "11 AM: news on NVDA turned negative: IBD reports a fresh SEC probe hitting Nvidia and the earnings pop fizzled (CNBC). Playbook sells on a probe. Holding TGT (beat-and-raise, Yahoo says results smashed expectations).",
+          "evidence": [
+            "IBD 10:19 ET, Yahoo 10:46 ET, CNBC 9:55 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1100.md"
+            }
+          ],
+          "side": "sell",
+          "shares": 0.250886413058136,
+          "amount": 38.337952,
+          "cost_basis": 40.0,
+          "realized_pnl": -1.662048,
+          "proceeds_settle": "2026-11-19T09:30:00-05:00"
         }
       ],
       "decisions": [
@@ -420,6 +618,46 @@
           ],
           "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)",
           "trade_id": "57fb7bef13c87ef5"
+        },
+        {
+          "id": "a7fecac108955101",
+          "time": "2026-11-18T09:59:39-05:00",
+          "action": "hold",
+          "reason": "10 AM: TGT beat-and-raise catalyst intact; NVDA beat with raised guide, headlines say it trimmed gains but no downgrade or guidance cut. Hold both, $25 cash.",
+          "evidence": [
+            "Yahoo Finance live 9:55 ET; Newsquawk",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1000.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "32503b7d1d447065",
+          "time": "2026-11-18T10:56:40-05:00",
+          "action": "sell",
+          "reason": "11 AM: news on NVDA turned negative: IBD reports a fresh SEC probe hitting Nvidia and the earnings pop fizzled (CNBC). Playbook sells on a probe. Holding TGT (beat-and-raise, Yahoo says results smashed expectations).",
+          "evidence": [
+            "IBD 10:19 ET, Yahoo 10:46 ET, CNBC 9:55 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1100.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)",
+          "trade_id": "32503b7d1d447065"
+        },
+        {
+          "id": "e811f3cb056a2e73",
+          "time": "2026-11-18T11:57:01-05:00",
+          "action": "hold",
+          "reason": "Noon: news still supports TGT (beat, sales +7.1%, raised guide; up on the day). Broader news is risk-off (Dow -1%+, Waller pushing a half-point hike, S&P below 200-day, metals sliding), so no new buys with cash. Already at 3 trades today.",
+          "evidence": [
+            "Yahoo Finance live 11:51 ET; Proactive 11:30 ET; StockTitan 11:05 ET; CNBC 10:16 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1156.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
         }
       ],
       "history": [
@@ -437,19 +675,40 @@
             "BUY NVDA $40.00: Clean beat-and-raise: revenue $115.8B vs ~$109B, Q4 guide $130B vs $125B, FY2028 growth raised to ~75%, extra $150B buyback.",
             "BUY TGT $35.00: Target beat and raised: adj EPS $2.65 vs $2.07 (includes $0.50 tariff refund), sales $27.1B vs $26.5B, comps +5.6% with traffic +5%, raised FY outlook. Skipped Lowe's (margins narrowed, outlook trimmed) and TTWO (already +7% on a release date, not new fundamentals). $25 cash kept."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 101.072347,
+          "decisions": [
+            "HOLD: 10 AM: TGT beat-and-raise catalyst intact; NVDA beat with raised guide, headlines say it trimmed gains but no downgrade or guidance cut. Hold both, $25 cash."
+          ]
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 100.72497,
+          "decisions": [
+            "SELL NVDA $38.34: 11 AM: news on NVDA turned negative: IBD reports a fresh SEC probe hitting Nvidia and the earnings pop fizzled (CNBC). Playbook sells on a probe. Holding TGT (beat-and-raise, Yahoo says results smashed expectations)."
+          ]
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 100.829091,
+          "decisions": [
+            "HOLD: Noon: news still supports TGT (beat, sales +7.1%, raised guide; up on the day). Broader news is risk-off (Dow -1%+, Waller pushing a half-point hike, S&P below 200-day, metals sliding), so no new buys with cash. Already at 3 trades today."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.08647,
-        "return_pct": 0.086,
-        "trades": 2,
-        "closed_sells": 0,
+        "current_value": 100.829091,
+        "return_pct": 0.829,
+        "trades": 3,
+        "closed_sells": 1,
         "wins": 0,
-        "win_rate": null,
-        "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "win_rate": 0.0,
+        "realized_pnl": -1.662048,
+        "max_drawdown_pct": -0.344,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     },
     {
@@ -561,6 +820,42 @@
           ],
           "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average",
           "trade_id": "e8c6c7587a47b077"
+        },
+        {
+          "id": "8009e952920f3842",
+          "time": "2026-11-18T09:59:39-05:00",
+          "action": "hold",
+          "reason": "Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow.",
+          "evidence": [
+            "daily_stats 8:12 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "e1cdaa2a424685f3",
+          "time": "2026-11-18T10:56:46-05:00",
+          "action": "hold",
+          "reason": "Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow.",
+          "evidence": [
+            "daily_stats 8:12 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "35d1013ea82945b2",
+          "time": "2026-11-18T11:57:01-05:00",
+          "action": "hold",
+          "reason": "Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow.",
+          "evidence": [
+            "daily formula from 8:13 AM ET run"
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
         }
       ],
       "history": [
@@ -578,19 +873,40 @@
             "BUY XLP $30.00: Formula: eligible ETFs (close > 200-day, 50-day > 200-day) ranked by 3-month return: XLP +5.69% #1. SPY close 732.44 is only 0.01% above its 200-day 732.34 (not >1%), so risk-off sizing: 30% each, 40% cash.",
             "BUY XLV $30.00: Formula target #2: XLV 3-month +5.44%, close 185.24 > 200-day 160.52, 50-day 175.74 > 200-day. Risk-off sizing 30%."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.199816,
+          "decisions": [
+            "HOLD: Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow."
+          ]
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 99.784138,
+          "decisions": [
+            "HOLD: Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow."
+          ]
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 99.967907,
+          "decisions": [
+            "HOLD: Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.02771,
-        "return_pct": 0.028,
+        "current_value": 99.967907,
+        "return_pct": -0.032,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "max_drawdown_pct": -0.415,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     },
     {
@@ -702,6 +1018,42 @@
           ],
           "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula",
           "trade_id": "0bbc8057e54c849d"
+        },
+        {
+          "id": "c06b57f1c60b31e8",
+          "time": "2026-11-18T09:59:39-05:00",
+          "action": "hold",
+          "reason": "10 AM: COST holding near recent highs (1107.5 vs 5-day range 1092-1114) while SPY is near lows; AAPL bouncing (355.4 vs 351.9). Neither pattern broken, nowhere near 7% off highs.",
+          "evidence": [
+            "Yahoo daily closes 5d: COST 1092.21,1106.21,1113.74,1110.08,1107.52; AAPL 354.88,356.27,352.78,351.91,355.39; SPY 757.12..733.41"
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "3c16764fbf3d2f21",
+          "time": "2026-11-18T10:56:46-05:00",
+          "action": "hold",
+          "reason": "11 AM: COST 1102 holds ~1% under its 52w high 1113.7, well above 20-day (1049), relative strength while SPY is -4% over 5 days and back under its 200-day. AAPL 352.6 holds above 20-day 347.7, ~1% off high. Neither pattern broken; no new clean breakout worth the $30 cash in a falling tape.",
+          "evidence": [
+            "daily_stats 10:58 ET: COST r21 +10.8%, AAPL r21 +3.9%, SPY r5 -4.0%, SPY 729.6 vs sma200 732.5",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1100.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "d8a30251a5a5f64c",
+          "time": "2026-11-18T11:57:02-05:00",
+          "action": "hold",
+          "reason": "Noon: COST 1106.6 sits 0.6% under its 52w high 1113.7, far above its 20-day (1049) and up 11% over a month while SPY is -4.2% over 5 days and below its 200-day: relative strength intact. AAPL 351.7 holds above its 20-day (347.6) and 50-day (341.1), ~1% under the 52w high; no breakdown. Hold both, keep $30 cash given SPY's weak pattern.",
+          "evidence": [
+            "daily_stats 11:56 ET: COST sma20 1049 hi52 1113.7 r21 +11.3%; AAPL sma20 347.6 sma50 341.1; SPY r5 -4.2% vs sma200 732.5",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1156.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
         }
       ],
       "history": [
@@ -719,19 +1071,40 @@
             "BUY COST $40.00: Chart: fresh breakout to a 52-week high (close 1110.08, 0.3% off the high) after a steady climb, 4 green days of the last 5, well above its 20/50-day lines, while SPY sits 6% off its high. Strongest relative strength on the watchlist.",
             "BUY AAPL $30.00: Chart: holding 1.2% under its high in a tight range while QQQ is 13.5% off its high; higher lows above the 20 and 50-day lines. Avoided NVDA/MU/SMH (falling knives, 30-41% off highs, below all averages) and SLS (parabolic +156% one-day spike). $30 cash kept."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.52958,
+          "decisions": [
+            "HOLD: 10 AM: COST holding near recent highs (1107.5 vs 5-day range 1092-1114) while SPY is near lows; AAPL bouncing (355.4 vs 351.9). Neither pattern broken, nowhere near 7% off highs."
+          ]
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 100.081195,
+          "decisions": [
+            "HOLD: 11 AM: COST 1102 holds ~1% under its 52w high 1113.7, well above 20-day (1049), relative strength while SPY is -4% over 5 days and back under its 200-day. AAPL 352.6 holds above 20-day 347.7, ~1% off high. Neither pattern broken; no new clean breakout worth the $30 cash in a falling tape."
+          ]
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 100.149312,
+          "decisions": [
+            "HOLD: Noon: COST 1106.6 sits 0.6% under its 52w high 1113.7, far above its 20-day (1049) and up 11% over a month while SPY is -4.2% over 5 days and below its 200-day: relative strength intact. AAPL 351.7 holds above its 20-day (347.6) and 50-day (341.1), ~1% under the 52w high; no breakdown. Hold both, keep $30 cash given SPY's weak pattern."
+          ]
         }
       ],
       "stats": {
-        "current_value": 99.980344,
-        "return_pct": -0.02,
+        "current_value": 100.149312,
+        "return_pct": 0.149,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -0.02,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "max_drawdown_pct": -0.446,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     },
     {
@@ -807,19 +1180,34 @@
           "decisions": [
             "BUY SPY $100.00: Benchmark: buy $100 SPY once at experiment start and hold."
           ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 99.914193,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 99.38709,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 99.125583,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 99.926451,
-        "return_pct": -0.074,
+        "current_value": 99.125583,
+        "return_pct": -0.874,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -0.074,
-        "snapshots": 2,
-        "as_of": "2026-11-18T08:20:31-05:00"
+        "max_drawdown_pct": -0.874,
+        "snapshots": 5,
+        "as_of": "2026-11-18T11:57:14-05:00"
       }
     }
   ],
@@ -1080,6 +1468,24 @@
           "value": 99.733718,
           "era": "Week 2 (Nov 17-24)",
           "note": "3 PM run: hold. BRK-B -0.04%, XLP -0.7% vs cost, both well inside trailing stops (7%/6%). Keeping $20 cash dry into NVDA earnings tonight. Community signal: Reddit (ApeWisdom) still NVDA-dominated (1388 mentions, up from 1046) with SPY chat"
+        },
+        {
+          "time": "2026-11-18T09:59:48-05:00",
+          "value": 98.955176,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "10 AM run: hold. BRK-B -1.7%, XLP -0.9% vs cost, both inside trailing stops (7%/6%). NVDA beat-and-raise but its pop fully faded at the open and S&P slipped red, so no chasing semis with the $20 cash. Community signal: X posts say NVDA 'era"
+        },
+        {
+          "time": "2026-11-18T10:58:30-05:00",
+          "value": 98.508809,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "11 AM run: hold. BRK-B ~-2.4%, XLP ~-1.2% vs cost, both well inside trailing stops (7%/6%). Dow -1% on a Fed official floating a half-point hike, S&P back under its 200-day, NVDA turned red on an SEC probe report and the Huang scandal; no r"
+        },
+        {
+          "time": "2026-11-18T11:57:04-05:00",
+          "value": 98.743664,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "Noon run: hold. BRK-B -2.3%, XLP -0.65% vs cost, both well inside trailing stops (7%/6%). Fresh risk-off shock: reported US strike on an Iranian missile site sent stocks lower, Dow -1%+, Waller floating a half-point December hike, S&P under"
         }
       ],
       "trades": 2,
@@ -1159,40 +1565,40 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-18T08:20:31-05:00",
+    "as_of": "2026-11-18T11:57:14-05:00",
     "trading_days": 1,
     "lines": [
-      "Leader so far: Reddit only at +0.09% ($100.09).",
-      "Trailing: Pattern matching only at -0.02% ($99.98).",
-      "Beating the SPY buy-and-hold benchmark (-0.07%): 5 of 5 (Reddit only, X only, News only, Trend rules only, Pattern matching only).",
-      "No experiment has closed a position yet, so win rates are not meaningful."
+      "Leader so far: News only at +0.83% ($100.83).",
+      "Trailing: Reddit only at -3.79% ($96.21).",
+      "Beating the SPY buy-and-hold benchmark (-0.87%): 3 of 5 (News only, Trend rules only, Pattern matching only).",
+      "Best win rate on closed sells: X only (0/1)."
     ],
     "verdict": "Too early to reweight signals: 1 trading day(s) of data; the plan is to wait for at least 15.",
     "ranking": [
       {
-        "id": "reddit_only",
-        "name": "Reddit only",
-        "return_pct": 0.088
-      },
-      {
         "id": "news_only",
         "name": "News only",
-        "return_pct": 0.086
-      },
-      {
-        "id": "x_only",
-        "name": "X only",
-        "return_pct": 0.059
-      },
-      {
-        "id": "technical_trend_only",
-        "name": "Trend rules only",
-        "return_pct": 0.028
+        "return_pct": 0.829
       },
       {
         "id": "pattern_matching_only",
         "name": "Pattern matching only",
-        "return_pct": -0.02
+        "return_pct": 0.149
+      },
+      {
+        "id": "technical_trend_only",
+        "name": "Trend rules only",
+        "return_pct": -0.032
+      },
+      {
+        "id": "x_only",
+        "name": "X only",
+        "return_pct": -2.499
+      },
+      {
+        "id": "reddit_only",
+        "name": "Reddit only",
+        "return_pct": -3.786
       }
     ]
   }
