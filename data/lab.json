@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T11:57:14-05:00",
+  "generated_at": "2026-11-18T12:46:22-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -248,19 +248,24 @@
           "decisions": [
             "BUY AMD $25.00: Noon: AMD jumped to #4 on ApeWisdom with 162 mentions vs 100 24h ago (+62%, rank 5->4), large cap well above $5, so a rising top-ranked name per playbook. NVDA still #1 (2189 vs 1351, rising); MU #5 at 121 vs 157 (-23%, not halved, still top 15) so no sell. Deploying the last $25 into AMD."
           ]
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 97.459681,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 96.213842,
-        "return_pct": -3.786,
+        "current_value": 97.459681,
+        "return_pct": -2.54,
         "trades": 3,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -3.871,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     },
     {
@@ -472,19 +477,24 @@
           "decisions": [
             "HOLD: Noon: X News says US stocks plunged after a reported US strike on an Iranian missile site (posts claim $500-660B wiped in 15 min) and trader threads preach 'no trade is also a trade'. Playbook holds back cash on a risk-off tape. No clear negative X turn on SMH specifically, so keep it. Also at the 3-trades/day limit."
           ]
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 97.863335,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 97.500861,
-        "return_pct": -2.499,
+        "current_value": 97.863335,
+        "return_pct": -2.137,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.208733,
         "max_drawdown_pct": -2.557,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     },
     {
@@ -696,19 +706,24 @@
           "decisions": [
             "HOLD: Noon: news still supports TGT (beat, sales +7.1%, raised guide; up on the day). Broader news is risk-off (Dow -1%+, Waller pushing a half-point hike, S&P below 200-day, metals sliding), so no new buys with cash. Already at 3 trades today."
           ]
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 101.13093,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.829091,
-        "return_pct": 0.829,
+        "current_value": 101.13093,
+        "return_pct": 1.131,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.662048,
         "max_drawdown_pct": -0.344,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     },
     {
@@ -894,19 +909,24 @@
           "decisions": [
             "HOLD: Formula is applied once a day at the first run (8:13 AM ET: XLP, XLV at 30% each, 40% cash). No re-check until tomorrow."
           ]
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 100.012252,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 99.967907,
-        "return_pct": -0.032,
+        "current_value": 100.012252,
+        "return_pct": 0.012,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -0.415,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     },
     {
@@ -1092,19 +1112,24 @@
           "decisions": [
             "HOLD: Noon: COST 1106.6 sits 0.6% under its 52w high 1113.7, far above its 20-day (1049) and up 11% over a month while SPY is -4.2% over 5 days and below its 200-day: relative strength intact. AAPL 351.7 holds above its 20-day (347.6) and 50-day (341.1), ~1% under the 52w high; no breakdown. Hold both, keep $30 cash given SPY's weak pattern."
           ]
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 100.466123,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.149312,
-        "return_pct": 0.149,
+        "current_value": 100.466123,
+        "return_pct": 0.466,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -0.446,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     },
     {
@@ -1195,19 +1220,240 @@
           "time": "2026-11-18T11:57:14-05:00",
           "value": 99.125583,
           "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 99.628163,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 99.125583,
-        "return_pct": -0.874,
+        "current_value": 99.628163,
+        "return_pct": -0.372,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -0.874,
-        "snapshots": 5,
-        "as_of": "2026-11-18T11:57:14-05:00"
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
+      }
+    },
+    {
+      "id": "tsla_hold",
+      "name": "Tesla buy & hold",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of TSLA once and holds.",
+      "color": "#CC3311",
+      "short_rule": "Benchmark only: $100 of TSLA bought at the start and never traded.",
+      "rules_md": "# Tesla buy & hold\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of TSLA once at the experiment start and never trade again. This line shows how Tesla alone would have done next to the other portfolios.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "TSLA",
+          "shares": 0.2612330198537095,
+          "cost": 100.0,
+          "avg_price": 382.8
+        }
+      ],
+      "trades": [
+        {
+          "id": "eea83ebd32879f91",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "TSLA",
+          "price": 382.8,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:00-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 TSLA once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.2612330198537095,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "eea83ebd32879f91",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 TSLA once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of TSLA once and holds.",
+          "trade_id": "eea83ebd32879f91"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.101881,
+          "decisions": [
+            "BUY TSLA $100.00: Benchmark: buy $100 TSLA once at experiment start and hold."
+          ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.50679,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 99.535002,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 99.304494,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 100.438874,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 100.438874,
+        "return_pct": 0.439,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": -1.196,
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
+      }
+    },
+    {
+      "id": "spcx_hold",
+      "name": "SpaceX buy & hold",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of SPCX once and holds.",
+      "color": "#332288",
+      "short_rule": "Benchmark only: $100 of SPCX bought at the start and never traded.",
+      "rules_md": "# SpaceX buy & hold\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of SPCX (Space Exploration Technologies Corp.) once at the experiment start and never trade again. This line shows how SpaceX alone would have done next to the other portfolios.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "SPCX",
+          "shares": 0.7030371203599549,
+          "cost": 100.0,
+          "avg_price": 142.24
+        }
+      ],
+      "trades": [
+        {
+          "id": "c99cf64b39f78ad5",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "SPCX",
+          "price": 142.24,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:00-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 SPCX once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.7030371203599549,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "c99cf64b39f78ad5",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 SPCX once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of SPCX once and holds.",
+          "trade_id": "c99cf64b39f78ad5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 99.88892,
+          "decisions": [
+            "BUY SPCX $100.00: Benchmark: buy $100 SPCX once at experiment start and hold."
+          ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.787402,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 102.01069,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 100.931526,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:46:22-05:00",
+          "value": 101.59589,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 101.59589,
+        "return_pct": 1.596,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": -1.058,
+        "snapshots": 6,
+        "as_of": "2026-11-18T12:46:22-05:00"
       }
     }
   ],
@@ -1565,12 +1811,12 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-18T11:57:14-05:00",
+    "as_of": "2026-11-18T12:46:22-05:00",
     "trading_days": 1,
     "lines": [
-      "Leader so far: News only at +0.83% ($100.83).",
-      "Trailing: Reddit only at -3.79% ($96.21).",
-      "Beating the SPY buy-and-hold benchmark (-0.87%): 3 of 5 (News only, Trend rules only, Pattern matching only).",
+      "Leader so far: News only at +1.13% ($101.13).",
+      "Trailing: Reddit only at -2.54% ($97.46).",
+      "Beating the SPY buy-and-hold benchmark (-0.37%): 3 of 5 (News only, Trend rules only, Pattern matching only).",
       "Best win rate on closed sells: X only (0/1)."
     ],
     "verdict": "Too early to reweight signals: 1 trading day(s) of data; the plan is to wait for at least 15.",
@@ -1578,27 +1824,27 @@
       {
         "id": "news_only",
         "name": "News only",
-        "return_pct": 0.829
+        "return_pct": 1.131
       },
       {
         "id": "pattern_matching_only",
         "name": "Pattern matching only",
-        "return_pct": 0.149
+        "return_pct": 0.466
       },
       {
         "id": "technical_trend_only",
         "name": "Trend rules only",
-        "return_pct": -0.032
+        "return_pct": 0.012
       },
       {
         "id": "x_only",
         "name": "X only",
-        "return_pct": -2.499
+        "return_pct": -2.137
       },
       {
         "id": "reddit_only",
         "name": "Reddit only",
-        "return_pct": -3.786
+        "return_pct": -2.54
       }
     ]
   }
