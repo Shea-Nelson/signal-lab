@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal Lab: which trading signal works?</title>
+  <meta name="description" content="Pretend-money experiments: one $100 portfolio per signal source (Reddit, X, news, trend rules, pattern matching) next to Team Shea, Team Nicole, and a SPY benchmark.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Pretend money, real prices</p>
+      <h1>Signal Lab</h1>
+      <p class="lede">Each $100 portfolio trades on <strong>one</strong> source only, so we can see which signal actually works. Team Shea and Team Nicole from the weekly game, plus a plain SPY buy-and-hold line, are here for comparison.</p>
+      <p class="meta" id="updated">Loading data…</p>
+    </div>
+  </header>
+  <nav aria-label="On this page" class="wrap toc">
+    <a href="#chart-h">Chart</a><a href="#board-h">Leaderboard</a><a href="#working-h">What's working</a><a href="#log-h">Trade log</a><a href="#rules-h">Rules</a>
+  </nav>
+  <main id="main" class="wrap">
+    <section aria-labelledby="chart-h">
+      <h2 id="chart-h">Value over time</h2>
+      <div class="controls">
+        <fieldset class="seg">
+          <legend>Time range</legend>
+          <label><input type="radio" name="range" value="week" checked> This game week</label>
+          <label><input type="radio" name="range" value="lab"> Since experiments began</label>
+          <label><input type="radio" name="range" value="all"> All game history</label>
+        </fieldset>
+      </div>
+      <figure class="chart-fig">
+        <div id="chart" class="chart" role="img" aria-labelledby="chart-cap"></div>
+        <figcaption id="chart-cap">Portfolio value in dollars by time (Eastern). Team Nicole shows only the values Giles reported, as dots. The SPY benchmark is dashed. Nights, weekends, and holidays are squeezed so trading hours get the room. A line appears only when it has data in the chosen range.</figcaption>
+      </figure>
+      <div id="legend" class="legend" aria-label="Show or hide lines"></div>
+      <details class="table-alt">
+        <summary>Chart data as a table</summary>
+        <div id="chart-table"></div>
+      </details>
+    </section>
+
+    <section aria-labelledby="board-h">
+      <h2 id="board-h">Leaderboard</h2>
+      <div tabindex="0" role="region" aria-labelledby="board-cap" class="table-wrapper">
+        <table id="board" class="board">
+          <caption id="board-cap">Current value and results. Experiments run continuously from $100; the two teams reset to $100 every Tuesday at noon ET, so their numbers are for the current game week.</caption>
+          <thead><tr><th scope="col">Portfolio</th><th scope="col">Value</th><th scope="col">Return</th><th scope="col">This week</th><th scope="col">Trades</th><th scope="col">Win rate</th><th scope="col">Max drawdown</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="working-h">
+      <h2 id="working-h">What's working</h2>
+      <p class="note">Computed from the data on every update. No opinions added.</p>
+      <ul id="working"></ul>
+      <p id="verdict" class="verdict"></p>
+    </section>
+
+    <section aria-labelledby="log-h">
+      <h2 id="log-h">Trade log</h2>
+      <div id="logs"></div>
+    </section>
+
+    <section aria-labelledby="rules-h">
+      <h2 id="rules-h">Rules for each portfolio</h2>
+      <div id="rules"></div>
+    </section>
+  </main>
+  <footer class="wrap site-footer">
+    <p>Pretend money only. Prices from the Yahoo Finance chart API. Nothing here is investment advice, and no real orders are ever placed. Times are Eastern (ET).</p>
+    <p><a href="https://shea-nelson.github.io/">All pages</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1163 @@
+{
+  "generated_at": "2026-11-18T08:15:36-05:00",
+  "experiment_start": "2026-11-18T08:12:35-05:00",
+  "game_weeks": [
+    {
+      "label": "Round 1",
+      "start": "2026-11-09T21:28:00-05:00",
+      "end": "2026-11-10T12:00:00-05:00"
+    },
+    {
+      "label": "Week 1",
+      "start": "2026-11-10T13:33:00-05:00",
+      "end": "2026-11-17T12:00:00-05:00"
+    },
+    {
+      "label": "Week 2",
+      "start": "2026-11-17T12:20:00-05:00",
+      "end": "2026-11-24T12:00:00-05:00"
+    },
+    {
+      "label": "Week 3",
+      "start": "2026-11-24T12:00:00-05:00",
+      "end": "2026-12-01T12:00:00-05:00"
+    },
+    {
+      "label": "Week 4 (final)",
+      "start": "2026-12-01T12:00:00-05:00",
+      "end": "2026-12-08T12:00:00-05:00"
+    }
+  ],
+  "portfolios": [
+    {
+      "id": "reddit_only",
+      "name": "Reddit only",
+      "kind": "experiment",
+      "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
+      "color": "#0072B2",
+      "short_rule": "Trades only on Reddit mention ranks and mention growth from ApeWisdom.",
+      "rules_md": "# Reddit only\n\n**Allowed input:** ApeWisdom stock mention data (`https://apewisdom.io/api/v1.0/filter/all-stocks/page/1`): rank, mentions, mentions 24h ago, upvotes, rank 24h ago. Reading Reddit post titles from r/wallstreetbets, r/stocks, r/investing is also allowed when reachable (Reddit JSON often hangs; ApeWisdom is the reliable feed).\n\n**Not allowed:** news, X, price charts or moving averages, the runner's own market view.\n\n**Playbook:**\n- Buy names with the most mentions and rising mention counts (mentions now vs 24h ago), up to 2 or 3 positions, $25 to $45 each.\n- Skip sub-$5 stocks and one-day mention spikes from tiny caps (pump risk). ETFs like SPY or QQQ count if they rank.\n- Sell when a holding falls out of the top 15 by mentions or its mentions drop by half day over day.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 25.0,
+      "settled_cash": 25.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "NVDA",
+          "shares": 0.2509410288582183,
+          "cost": 40.0,
+          "avg_price": 159.40000000000003
+        },
+        {
+          "symbol": "MU",
+          "shares": 0.04829118203016129,
+          "cost": 35.0,
+          "avg_price": 724.77
+        }
+      ],
+      "trades": [
+        {
+          "id": "d40dab5755999d01",
+          "time": "2026-11-18T08:13:41-05:00",
+          "symbol": "NVDA",
+          "price": 159.4,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:38-05:00",
+          "session": "pre",
+          "reason": "Reddit's #1 name by a mile: 2,218 mentions vs 1,233 a day ago (+80%), 9,754 upvotes.",
+          "evidence": [
+            "ApeWisdom all-stocks 8:08 AM ET: NVDA rank 1, 2218 mentions (1233 24h ago)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_0808.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.2509410288582183,
+          "amount": 40.0,
+          "funding": [
+            {
+              "amount": 40.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:41-05:00"
+        },
+        {
+          "id": "1c08a06d60139ef4",
+          "time": "2026-11-18T08:13:41-05:00",
+          "symbol": "MU",
+          "price": 724.77,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:39-05:00",
+          "session": "pre",
+          "reason": "Top-5 Reddit name with rising chatter: 151 mentions vs 124 (+22%), holding rank 4-5. Skipped SLS (#2, a 10x one-day mention spike in a small-cap biotech, pump risk) and SPY/QQQ (index chatter is mostly hedging talk). $25 cash kept.",
+          "evidence": [
+            "ApeWisdom 8:08 AM ET: MU rank 5, 151 mentions (124 24h ago); SLS 381 (39); AMD 144 (111)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_0808.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.04829118203016129,
+          "amount": 35.0,
+          "funding": [
+            {
+              "amount": 35.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:41-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "d40dab5755999d01",
+          "time": "2026-11-18T08:13:41-05:00",
+          "action": "buy",
+          "reason": "Reddit's #1 name by a mile: 2,218 mentions vs 1,233 a day ago (+80%), 9,754 upvotes.",
+          "evidence": [
+            "ApeWisdom all-stocks 8:08 AM ET: NVDA rank 1, 2218 mentions (1233 24h ago)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_0808.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
+          "trade_id": "d40dab5755999d01"
+        },
+        {
+          "id": "1c08a06d60139ef4",
+          "time": "2026-11-18T08:13:41-05:00",
+          "action": "buy",
+          "reason": "Top-5 Reddit name with rising chatter: 151 mentions vs 124 (+22%), holding rank 4-5. Skipped SLS (#2, a 10x one-day mention spike in a small-cap biotech, pump risk) and SPY/QQQ (index chatter is mostly hedging talk). $25 cash kept.",
+          "evidence": [
+            "ApeWisdom 8:08 AM ET: MU rank 5, 151 mentions (124 24h ago); SLS 381 (39); AMD 144 (111)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_0808.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
+          "trade_id": "1c08a06d60139ef4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.025127,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY NVDA $40.00: Reddit's #1 name by a mile: 2,218 mentions vs 1,233 a day ago (+80%), 9,754 upvotes.",
+            "BUY MU $35.00: Top-5 Reddit name with rising chatter: 151 mentions vs 124 (+22%), holding rank 4-5. Skipped SLS (#2, a 10x one-day mention spike in a small-cap biotech, pump risk) and SPY/QQQ (index chatter is mostly hedging talk). $25 cash kept."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.025127,
+        "return_pct": 0.025,
+        "trades": 2,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    },
+    {
+      "id": "x_only",
+      "name": "X only",
+      "kind": "experiment",
+      "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
+      "color": "#000000",
+      "short_rule": "Trades only on what X posts and X News stories say.",
+      "rules_md": "# X only\n\n**Allowed input:** public X posts (`x` namespace `search_posts_all`, recent premarket and market posts, cashtags) and X News stories (`search_news`, which are summaries of X posts).\n\n**Not allowed:** web news articles, Reddit, price charts or moving averages, the runner's own market view.\n\n**Playbook:**\n- Buy the tickers and themes X is most bullish on right now, weighting posts with real engagement and multiple independent accounts, up to 2 or 3 positions.\n- Hold back cash when X posts warn of a fade or a risk-off tape.\n- Sell when X sentiment on a holding turns clearly negative or the theme stops being discussed.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 30.0,
+      "settled_cash": 30.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "SMH",
+          "shares": 0.08528784648187633,
+          "cost": 40.0,
+          "avg_price": 469.0
+        },
+        {
+          "symbol": "NVDA",
+          "shares": 0.18820577164366373,
+          "cost": 30.0,
+          "avg_price": 159.4
+        }
+      ],
+      "trades": [
+        {
+          "id": "b54614c9760ecfea",
+          "time": "2026-11-18T08:13:41-05:00",
+          "symbol": "SMH",
+          "price": 469.0,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:32-05:00",
+          "session": "pre",
+          "reason": "X is loudest about a semiconductor rebound after Nvidia's beat: several premarket briefs say chips are leading (SOXX +2.5%, MU +2.5%). The semis ETF spreads that theme.",
+          "evidence": [
+            "X posts 8:00-8:05 AM ET: @gomarketbeater SOXX +2.53%, @traderkim71 'broad AI & semiconductor rebound', @Chart_Guy 'Semi stocks pre market-gainers'",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_posts_premarket_2026-11-18_0808.json.txt"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.08528784648187633,
+          "amount": 40.0,
+          "funding": [
+            {
+              "amount": 40.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:41-05:00"
+        },
+        {
+          "id": "2696402277a67f42",
+          "time": "2026-11-18T08:13:41-05:00",
+          "symbol": "NVDA",
+          "price": 159.4,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:38-05:00",
+          "session": "pre",
+          "reason": "X News headline story: record quarter, $130B guide, $150B buyback, 'shares climbed'. Sized small and $30 kept in cash because several X traders warn the premarket pop may fade ('half of that pop is already gone', 'bounce in a downtrend').",
+          "evidence": [
+            "X News 'Nvidia Board Rejects Jensen Huang's CEO Return Despite Record Earnings' (7:53 AM ET); @d_pavlos, @mrsgruhn fade warnings",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_news_2026-11-18_0810.md"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.18820577164366373,
+          "amount": 30.0,
+          "funding": [
+            {
+              "amount": 30.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:41-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "b54614c9760ecfea",
+          "time": "2026-11-18T08:13:41-05:00",
+          "action": "buy",
+          "reason": "X is loudest about a semiconductor rebound after Nvidia's beat: several premarket briefs say chips are leading (SOXX +2.5%, MU +2.5%). The semis ETF spreads that theme.",
+          "evidence": [
+            "X posts 8:00-8:05 AM ET: @gomarketbeater SOXX +2.53%, @traderkim71 'broad AI & semiconductor rebound', @Chart_Guy 'Semi stocks pre market-gainers'",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_posts_premarket_2026-11-18_0808.json.txt"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
+          "trade_id": "b54614c9760ecfea"
+        },
+        {
+          "id": "2696402277a67f42",
+          "time": "2026-11-18T08:13:41-05:00",
+          "action": "buy",
+          "reason": "X News headline story: record quarter, $130B guide, $150B buyback, 'shares climbed'. Sized small and $30 kept in cash because several X traders warn the premarket pop may fade ('half of that pop is already gone', 'bounce in a downtrend').",
+          "evidence": [
+            "X News 'Nvidia Board Rejects Jensen Huang's CEO Return Despite Record Earnings' (7:53 AM ET); @d_pavlos, @mrsgruhn fade warnings",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_news_2026-11-18_0810.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
+          "trade_id": "2696402277a67f42"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.00798,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY SMH $40.00: X is loudest about a semiconductor rebound after Nvidia's beat: several premarket briefs say chips are leading (SOXX +2.5%, MU +2.5%). The semis ETF spreads that theme.",
+            "BUY NVDA $30.00: X News headline story: record quarter, $130B guide, $150B buyback, 'shares climbed'. Sized small and $30 kept in cash because several X traders warn the premarket pop may fade ('half of that pop is already gone', 'bounce in a downtrend')."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.00798,
+        "return_pct": 0.008,
+        "trades": 2,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    },
+    {
+      "id": "news_only",
+      "name": "News only",
+      "kind": "experiment",
+      "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)",
+      "color": "#D55E00",
+      "short_rule": "Trades only on news headlines and articles: earnings, guidance, deals.",
+      "rules_md": "# News only\n\n**Allowed input:** published financial news found by web search or news sites (CNBC, Reuters, Investing.com, StockAnalysis, MarketWatch, company press releases): earnings results, guidance, deals, analyst actions, economic data.\n\n**Not allowed:** X posts or X News, Reddit, price charts or moving averages beyond the price needed to size a trade.\n\n**Playbook:**\n- Buy companies with clear positive fundamental news today (beat-and-raise earnings, raised guidance, big buybacks, deals), up to 2 or 3 positions.\n- Avoid names whose news is mixed (beat with weaker margins or cut guidance).\n- Sell when the news turns negative (downgrade, guidance cut, probe) or the catalyst has passed and newer catalysts look better.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 25.0,
+      "settled_cash": 25.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "NVDA",
+          "shares": 0.250886413058136,
+          "cost": 40.0,
+          "avg_price": 159.4347
+        },
+        {
+          "symbol": "TGT",
+          "shares": 0.2215330084182543,
+          "cost": 35.0,
+          "avg_price": 157.99
+        }
+      ],
+      "trades": [
+        {
+          "id": "201221e57877dfcd",
+          "time": "2026-11-18T08:13:41-05:00",
+          "symbol": "NVDA",
+          "price": 159.4347,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:32-05:00",
+          "session": "pre",
+          "reason": "Clean beat-and-raise: revenue $115.8B vs ~$109B, Q4 guide $130B vs $125B, FY2028 growth raised to ~75%, extra $150B buyback.",
+          "evidence": [
+            "StockAnalysis 5:36 AM ET; Investing.com 5:54 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_0815.md"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.250886413058136,
+          "amount": 40.0,
+          "funding": [
+            {
+              "amount": 40.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:41-05:00"
+        },
+        {
+          "id": "57fb7bef13c87ef5",
+          "time": "2026-11-18T08:13:42-05:00",
+          "symbol": "TGT",
+          "price": 157.99,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:39-05:00",
+          "session": "pre",
+          "reason": "Target beat and raised: adj EPS $2.65 vs $2.07 (includes $0.50 tariff refund), sales $27.1B vs $26.5B, comps +5.6% with traffic +5%, raised FY outlook. Skipped Lowe's (margins narrowed, outlook trimmed) and TTWO (already +7% on a release date, not new fundamentals). $25 cash kept.",
+          "evidence": [
+            "Investing.com premarket movers 5:54 AM ET; CNBC live updates",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_0815.md"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.2215330084182543,
+          "amount": 35.0,
+          "funding": [
+            {
+              "amount": 35.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:42-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "201221e57877dfcd",
+          "time": "2026-11-18T08:13:41-05:00",
+          "action": "buy",
+          "reason": "Clean beat-and-raise: revenue $115.8B vs ~$109B, Q4 guide $130B vs $125B, FY2028 growth raised to ~75%, extra $150B buyback.",
+          "evidence": [
+            "StockAnalysis 5:36 AM ET; Investing.com 5:54 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_0815.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)",
+          "trade_id": "201221e57877dfcd"
+        },
+        {
+          "id": "57fb7bef13c87ef5",
+          "time": "2026-11-18T08:13:42-05:00",
+          "action": "buy",
+          "reason": "Target beat and raised: adj EPS $2.65 vs $2.07 (includes $0.50 tariff refund), sales $27.1B vs $26.5B, comps +5.6% with traffic +5%, raised FY outlook. Skipped Lowe's (margins narrowed, outlook trimmed) and TTWO (already +7% on a release date, not new fundamentals). $25 cash kept.",
+          "evidence": [
+            "Investing.com premarket movers 5:54 AM ET; CNBC live updates",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_0815.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)",
+          "trade_id": "57fb7bef13c87ef5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.001932,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY NVDA $40.00: Clean beat-and-raise: revenue $115.8B vs ~$109B, Q4 guide $130B vs $125B, FY2028 growth raised to ~75%, extra $150B buyback.",
+            "BUY TGT $35.00: Target beat and raised: adj EPS $2.65 vs $2.07 (includes $0.50 tariff refund), sales $27.1B vs $26.5B, comps +5.6% with traffic +5%, raised FY outlook. Skipped Lowe's (margins narrowed, outlook trimmed) and TTWO (already +7% on a release date, not new fundamentals). $25 cash kept."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.001932,
+        "return_pct": 0.002,
+        "trades": 2,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    },
+    {
+      "id": "technical_trend_only",
+      "name": "Trend rules only",
+      "kind": "experiment",
+      "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average",
+      "color": "#009E73",
+      "short_rule": "Mechanical rules: 50/200-day trend filter plus 3-month momentum ranking on sector ETFs.",
+      "rules_md": "# Trend rules only\n\n**Allowed input:** daily closing prices from Yahoo Finance (`tools/daily_stats.py`): 20, 50, and 200-day simple moving averages and 1-month and 3-month returns.\n\n**Not allowed:** news, X, Reddit, discretionary chart reading. This portfolio follows the formula even when it looks wrong.\n\n**Universe:** SPY, QQQ, IWM, DIA, SMH, XLK, XLF, XLE, XLV, XLP, XLU, XLI, XLY, XLB, XLRE, XLC, GLD, TLT.\n\n**Formula (check once a day, at the first run of the day):**\n1. Eligible ETFs have last close above the 200-day average and the 50-day above the 200-day.\n2. Rank eligible ETFs by 3-month (63 trading day) return. Target the top 2.\n3. Regime: if SPY's close is more than 1% above its 200-day average, put 45% in each target. Otherwise (risk-off or a coin flip) put 30% in each and keep 40% cash.\n4. Sell a holding when it drops out of the top 3 eligible, or closes below its 200-day average. Rebalance only when a target changes (no small trims).\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 40.0,
+      "settled_cash": 40.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "XLP",
+          "shares": 0.3302146395156852,
+          "cost": 30.0,
+          "avg_price": 90.85
+        },
+        {
+          "symbol": "XLV",
+          "shares": 0.16299918500407498,
+          "cost": 30.0,
+          "avg_price": 184.05
+        }
+      ],
+      "trades": [
+        {
+          "id": "1850c570c4c7d4ba",
+          "time": "2026-11-18T08:13:42-05:00",
+          "symbol": "XLP",
+          "price": 90.85,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:07-05:00",
+          "session": "pre",
+          "reason": "Formula: eligible ETFs (close > 200-day, 50-day > 200-day) ranked by 3-month return: XLP +5.69% #1. SPY close 732.44 is only 0.01% above its 200-day 732.34 (not >1%), so risk-off sizing: 30% each, 40% cash.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: XLP close 91.46, 50d 85.96, 200d 84.97, r63 +5.69; XLV r63 +5.44; XLF -0.71; XLE -0.35; SPY r63 -4.76",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.3302146395156852,
+          "amount": 30.0,
+          "funding": [
+            {
+              "amount": 30.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:42-05:00"
+        },
+        {
+          "id": "e8c6c7587a47b077",
+          "time": "2026-11-18T08:13:42-05:00",
+          "symbol": "XLV",
+          "price": 184.05,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:10 ET",
+          "quote_time": "2026-11-18T08:10:34-05:00",
+          "session": "pre",
+          "reason": "Formula target #2: XLV 3-month +5.44%, close 185.24 > 200-day 160.52, 50-day 175.74 > 200-day. Risk-off sizing 30%.",
+          "evidence": [
+            "daily_stats 8:12 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.16299918500407498,
+          "amount": 30.0,
+          "funding": [
+            {
+              "amount": 30.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:42-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "1850c570c4c7d4ba",
+          "time": "2026-11-18T08:13:42-05:00",
+          "action": "buy",
+          "reason": "Formula: eligible ETFs (close > 200-day, 50-day > 200-day) ranked by 3-month return: XLP +5.69% #1. SPY close 732.44 is only 0.01% above its 200-day 732.34 (not >1%), so risk-off sizing: 30% each, 40% cash.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: XLP close 91.46, 50d 85.96, 200d 84.97, r63 +5.69; XLV r63 +5.44; XLF -0.71; XLE -0.35; SPY r63 -4.76",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average",
+          "trade_id": "1850c570c4c7d4ba"
+        },
+        {
+          "id": "e8c6c7587a47b077",
+          "time": "2026-11-18T08:13:42-05:00",
+          "action": "buy",
+          "reason": "Formula target #2: XLV 3-month +5.44%, close 185.24 > 200-day 160.52, 50-day 175.74 > 200-day. Risk-off sizing 30%.",
+          "evidence": [
+            "daily_stats 8:12 AM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average",
+          "trade_id": "e8c6c7587a47b077"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY XLP $30.00: Formula: eligible ETFs (close > 200-day, 50-day > 200-day) ranked by 3-month return: XLP +5.69% #1. SPY close 732.44 is only 0.01% above its 200-day 732.34 (not >1%), so risk-off sizing: 30% each, 40% cash.",
+            "BUY XLV $30.00: Formula target #2: XLV 3-month +5.44%, close 185.24 > 200-day 160.52, 50-day 175.74 > 200-day. Risk-off sizing 30%."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.0,
+        "return_pct": 0.0,
+        "trades": 2,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    },
+    {
+      "id": "pattern_matching_only",
+      "name": "Pattern matching only",
+      "kind": "experiment",
+      "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula",
+      "color": "#CC79A7",
+      "short_rule": "Scorpy reads price charts only: breakouts, support, relative strength. No news or chatter.",
+      "rules_md": "# Pattern matching only\n\n**Allowed input:** price and volume history only (daily and intraday bars from Yahoo Finance, the same `tools/daily_stats.py` numbers, and charts). The runner reads the charts the way a trader eyeballs patterns: breakouts to new highs, relative strength against the market, support bounces, failed breakdowns, parabolic spikes to avoid.\n\n**Not allowed:** news, X, Reddit, earnings dates, analyst views. No fixed formula (that is the trend portfolio's job). This isolates Scorpy's pattern recognition, which is how the main game started.\n\n**Playbook:**\n- Up to 2 or 3 positions from liquid large caps and ETFs.\n- Favor clean uptrends and stocks holding near highs while the market falls; avoid parabolic spikes and falling knives.\n- Exit when the pattern breaks (loses support, closes back under a breakout level) or about 7% off the high since buying.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 30.0,
+      "settled_cash": 30.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "COST",
+          "shares": 0.0362499433594635,
+          "cost": 40.0,
+          "avg_price": 1103.45
+        },
+        {
+          "symbol": "AAPL",
+          "shares": 0.08546278095889241,
+          "cost": 30.0,
+          "avg_price": 351.03
+        }
+      ],
+      "trades": [
+        {
+          "id": "efa1897279bed6b3",
+          "time": "2026-11-18T08:13:42-05:00",
+          "symbol": "COST",
+          "price": 1103.45,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:00 ET",
+          "quote_time": "2026-11-18T08:00:06-05:00",
+          "session": "pre",
+          "reason": "Chart: fresh breakout to a 52-week high (close 1110.08, 0.3% off the high) after a steady climb, 4 green days of the last 5, well above its 20/50-day lines, while SPY sits 6% off its high. Strongest relative strength on the watchlist.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: COST r21 +11.5%, r63 +16.0%, last5 [2.01,0.42,1.28,0.68,-0.33]",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.0362499433594635,
+          "amount": 40.0,
+          "funding": [
+            {
+              "amount": 40.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:42-05:00"
+        },
+        {
+          "id": "0bbc8057e54c849d",
+          "time": "2026-11-18T08:13:42-05:00",
+          "symbol": "AAPL",
+          "price": 351.03,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:30-05:00",
+          "session": "pre",
+          "reason": "Chart: holding 1.2% under its high in a tight range while QQQ is 13.5% off its high; higher lows above the 20 and 50-day lines. Avoided NVDA/MU/SMH (falling knives, 30-41% off highs, below all averages) and SLS (parabolic +156% one-day spike). $30 cash kept.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: AAPL close 351.91, 20d 347.26, 50d 340.41, 200d 302.13; QQQ fromHigh -13.5%; SLS last day +156%",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "side": "buy",
+          "shares": 0.08546278095889241,
+          "amount": 30.0,
+          "funding": [
+            {
+              "amount": 30.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:42-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "efa1897279bed6b3",
+          "time": "2026-11-18T08:13:42-05:00",
+          "action": "buy",
+          "reason": "Chart: fresh breakout to a 52-week high (close 1110.08, 0.3% off the high) after a steady climb, 4 green days of the last 5, well above its 20/50-day lines, while SPY sits 6% off its high. Strongest relative strength on the watchlist.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: COST r21 +11.5%, r63 +16.0%, last5 [2.01,0.42,1.28,0.68,-0.33]",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula",
+          "trade_id": "efa1897279bed6b3"
+        },
+        {
+          "id": "0bbc8057e54c849d",
+          "time": "2026-11-18T08:13:42-05:00",
+          "action": "buy",
+          "reason": "Chart: holding 1.2% under its high in a tight range while QQQ is 13.5% off its high; higher lows above the 20 and 50-day lines. Avoided NVDA/MU/SMH (falling knives, 30-41% off highs, below all averages) and SLS (parabolic +156% one-day spike). $30 cash kept.",
+          "evidence": [
+            "daily_stats 8:12 AM ET: AAPL close 351.91, 20d 347.26, 50d 340.41, 200d 302.13; QQQ fromHigh -13.5%; SLS last day +156%",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_0812.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula",
+          "trade_id": "0bbc8057e54c849d"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY COST $40.00: Chart: fresh breakout to a 52-week high (close 1110.08, 0.3% off the high) after a steady climb, 4 green days of the last 5, well above its 20/50-day lines, while SPY sits 6% off its high. Strongest relative strength on the watchlist.",
+            "BUY AAPL $30.00: Chart: holding 1.2% under its high in a tight range while QQQ is 13.5% off its high; higher lows above the 20 and 50-day lines. Avoided NVDA/MU/SMH (falling knives, 30-41% off highs, below all averages) and SLS (parabolic +156% one-day spike). $30 cash kept."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.0,
+        "return_pct": 0.0,
+        "trades": 2,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    },
+    {
+      "id": "spy_benchmark",
+      "name": "SPY buy-and-hold (benchmark)",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of SPY once and holds.",
+      "color": "#7F7F7F",
+      "short_rule": "Benchmark only: $100 of SPY bought at the start and never traded.",
+      "rules_md": "# SPY buy-and-hold (benchmark)\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of SPY once at the experiment start and never trade again. Every other portfolio should be judged by whether it beats this line.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "SPY",
+          "shares": 0.1362026695723236,
+          "cost": 100.0,
+          "avg_price": 734.2
+        }
+      ],
+      "trades": [
+        {
+          "id": "29e001d8c9512818",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "SPY",
+          "price": 734.2,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:13-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 SPY once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.1362026695723236,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "29e001d8c9512818",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 SPY once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of SPY once and holds.",
+          "trade_id": "29e001d8c9512818"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:13:42-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash",
+            "BUY SPY $100.00: Benchmark: buy $100 SPY once at experiment start and hold."
+          ]
+        }
+      ],
+      "stats": {
+        "current_value": 100.0,
+        "return_pct": 0.0,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 1,
+        "as_of": "2026-11-18T08:13:42-05:00"
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "team_shea",
+      "name": "Team Shea (main game)",
+      "color": "#E69F00",
+      "points": [
+        {
+          "time": "2026-11-09T21:35:33-05:00",
+          "value": 100.0,
+          "era": "Round 1 (Nov 9-10)",
+          "note": ""
+        },
+        {
+          "time": "2026-11-10T01:10:00-05:00",
+          "value": 100.0,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Hold both. No fresh overnight prints; SE (7:30 AM call) and QBTS (8:00 AM webcast) earnings not yet released, both before the open."
+        },
+        {
+          "time": "2026-11-10T04:03:00-05:00",
+          "value": 100.4143,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Hold both. Earnings not yet released (SE call 7:30 AM ET, QBTS webcast 8:00 AM ET, both before the open); the catalyst thesis is intact, no rotation."
+        },
+        {
+          "time": "2026-11-10T07:05:00-05:00",
+          "value": 97.8097,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Hold both. SE reported Q3 before 6:31 AM ET: EPS $0.78 missed ($0.81 est, Benzinga) but revenue $8.58B beat $8.05B (+43% y/y) and board added a $1B buyback; premarket dropped ~5% from 80.09. Mixed print with strong top line and buyback; hol"
+        },
+        {
+          "time": "2026-11-10T09:03:00-05:00",
+          "value": 96.1333,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Sold all QBTS after its earnings miss and premarket slide; rotated proceeds into SE (revenue beat + $1B buyback, recovering from the post-earnings dip). Now 100% SE into the noon finish."
+        },
+        {
+          "time": "2026-11-10T10:08:00-05:00",
+          "value": 102.4867,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Hold SE. Up from $78.00 premarket fill to ~$83.16 after the open (5m bars: 81.49 at 9:30, high ~83.92 at 9:50, steady ~83.2 since) on the 43% y/y revenue beat and $1B buyback. Momentum intact; QBTS flat ~10.80, no reason to rotate back. No "
+        },
+        {
+          "time": "2026-11-10T11:07:00-05:00",
+          "value": 101.285,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Sold all SE to cash to lock the gain; SE faded ~3.5% from its 10:15 high. Holding cash through the noon finish."
+        },
+        {
+          "time": "2026-11-10T12:05:00-05:00",
+          "value": 101.285027,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Game over at noon ET. All cash since 11:07 AM sale of SE, so no noon marks needed. Final 101.285027, +1.285% on $100. 5 trades."
+        },
+        {
+          "time": "2026-11-10T13:33:00-05:00",
+          "value": 101.285027,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Rematch start: carried round 1 final balance forward, all cash. Team Nicole starts at $101.17."
+        },
+        {
+          "time": "2026-11-10T14:02:35-05:00",
+          "value": 101.285027,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Market down (Dow ~-250). Went aggressive into the two strongest liquid earnings movers: half ZIP, half AAON, both bought with settled cash so they can be sold anytime."
+        },
+        {
+          "time": "2026-11-10T15:01:07-05:00",
+          "value": 103.743935,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both. ZIP up ~5.7% since entry and still pushing highs; AAON ~-0.8%, a normal pullback, not a stop. Selling now would also leave proceeds unsettled until Thu Nov 12 (Veterans Day holiday). No trades."
+        },
+        {
+          "time": "2026-11-11T09:56:00-05:00",
+          "value": 105.763268,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both. Market gapping up broadly (QQQ ~+2% vs yesterday afternoon). ZIP +7.4% and AAON +1.4% vs entry; both still trending up, no stop triggered. No trades."
+        },
+        {
+          "time": "2026-11-11T11:01:00-05:00",
+          "value": 107.838521,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both. ZIP +10.1% and AAON +2.8% vs entry, both making new highs with the market strong (QQQ +0.9% since 10 AM). No stop or better catalyst; selling would only create unsettled cash until Thu Nov 12. No trades."
+        },
+        {
+          "time": "2026-11-11T11:54:30-05:00",
+          "value": 106.150533,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Noon mark. Hold both. ZIP pulled back ~3.4% from the 11 AM high but is still +6.3% vs entry, a pullback in a post-earnings uptrend, not a stop; AAON +3.3% vs entry at new highs. Selling would leave cash unsettled until Thu Nov 12. No trades"
+        },
+        {
+          "time": "2026-11-11T13:01:30-05:00",
+          "value": 105.884897,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both. ZIP drifting lower (6.38, -1.1% since noon) but still +5.2% vs entry, no stop hit; AAON at new highs (79.20, +3.9% vs entry). Market firm (QQQ +0.1% since noon), no stronger catalyst; selling would leave cash unsettled until Thu "
+        },
+        {
+          "time": "2026-11-11T14:02:00-05:00",
+          "value": 102.341714,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Sold ZIP (fading, -7.8% on day, near LOD, entry gain gone) and bought TQQQ with the unsettled proceeds (TQQQ +8.8% today near HOD). TQQQ can't be sold before Thu Nov 12 open (no GFV). Holding AAON (+1.9% vs entry, pulled back from 79.93 HOD"
+        },
+        {
+          "time": "2026-11-11T14:55:00-05:00",
+          "value": 101.226084,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both. TQQQ 61.09 (-0.7% vs 2:02 PM entry) is locked until Thu Nov 12 open (bought with unsettled ZIP proceeds; selling now would be a GFV). AAON 76.55 still +0.4% vs entry after fading from 79.93 HOD; post-earnings consolidation, stop "
+        },
+        {
+          "time": "2026-11-12T10:03:00-05:00",
+          "value": 99.658497,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "ZIP proceeds settled at open, so TQQQ became sellable. Sold TQQQ (-3.9% vs entry, Nasdaq weak on Nvidia CEO turmoil) and rotated into LUNR (record quarter, +13% on heavy volume). LUNR locked until Fri Nov 13 open (bought with unsettled TQQQ"
+        },
+        {
+          "time": "2026-11-12T10:59:00-05:00",
+          "value": 102.135567,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both, no trades. 3% trailing rule not triggered: AAON 79.795 is -0.9% from its 80.54 high since buy (10:53 AM today), +4.7% vs entry; LUNR 13.918 is -0.7% from its 14.01 high since buy (10:47 AM), +0.8% vs entry and locked until Fri No"
+        },
+        {
+          "time": "2026-11-12T11:54:39-05:00",
+          "value": 102.228205,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Noon update. AAON hit the 3% trailing rule (78.71 vs 81.61 high) and was sold for +3.2% vs entry; rotated into AMD (upgrade, +6% today, very liquid) with unsettled proceeds, locked until Fri Nov 13 open. LUNR 14.15 is -3.2% from its 14.61 h"
+        },
+        {
+          "time": "2026-11-12T12:59:30-05:00",
+          "value": 100.647745,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both, no trades (no trades possible: no settled cash, both positions locked until Fri Nov 13 open). LUNR 13.825 is -5.4% below its 14.61 high: 3% trailing rule triggered but blocked by settlement rule; recorded, sell at first allowed r"
+        },
+        {
+          "time": "2026-11-12T14:00:30-05:00",
+          "value": 99.801543,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both, no trades possible (no settled cash; LUNR and AMD locked until Fri Nov 13 09:30 ET open). LUNR 13.645 is -6.6% below its 14.61 high: trailing rule still triggered, still blocked by settlement rule; sell at first allowed run Fri i"
+        },
+        {
+          "time": "2026-11-12T14:57:30-05:00",
+          "value": 100.085316,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both, no trades possible (no settled cash; LUNR and AMD locked until Fri Nov 13 09:30 ET open). LUNR 13.525 is -7.43% vs its 14.61 high: trailing rule still triggered, blocked by settlement rule; sell at first allowed run Fri if still "
+        },
+        {
+          "time": "2026-11-13T09:58:10-05:00",
+          "value": 91.396284,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Sold LUNR (-16.4% vs high) and AMD (-7.8% vs high) per the 3% trailing rule, now allowed since their funding settled at today's open. Proceeds 91.40 settle Mon Nov 16. Rotated half into MOD (Samsung takeover talks) and half into DIA (steady"
+        },
+        {
+          "time": "2026-11-13T11:00:30-05:00",
+          "value": 90.137127,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Hold both; no trades possible (no settled cash; MOD and DIA bought with unsettled money, locked until Mon Nov 16 09:30 ET open). MOD 134.235 is -4.20% vs its 140.125 high; DIA 521.460 is -0.34% vs its 523.240 high. Trailing 3% rule triggere"
+        },
+        {
+          "time": "2026-11-13T11:58:30-05:00",
+          "value": 91.418648,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Noon mark. Hold both; no trades possible (no settled cash; MOD and DIA bought with unsettled money, locked until Mon Nov 16 09:30 ET). MOD 138.17 rebounded to -1.40% vs its 140.125 high, so the 3% trailing rule is no longer triggered (pendi"
+        },
+        {
+          "time": "2026-11-13T12:57:00-05:00",
+          "value": 91.837609,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "1 PM run. Hold both; no trades possible (no settled cash, MOD and DIA locked until Mon Nov 16 09:30 ET; 2-trade daily limit also used). MOD 139.20 is -0.66% vs its 140.125 high, far from the 10% rule; Samsung-Modine talks still reported act"
+        },
+        {
+          "time": "2026-11-13T13:59:00-05:00",
+          "value": 91.828855,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "2 PM run. Hold both; no trades possible (no settled cash, MOD and DIA locked until Mon Nov 16 09:30 ET; 2-trade daily limit used). MOD 139.05 is -0.9% vs its 140.32 high, far from the 10% rule; Samsung-Modine talks still reported active (Bl"
+        },
+        {
+          "time": "2026-11-13T15:00:00-05:00",
+          "value": 91.569351,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "3 PM run. Hold both; no trades possible (no settled cash, MOD and DIA locked until Mon Nov 16 09:30 ET; 2-trade daily limit used). MOD 138.195 is -1.5% vs its 140.32 high, far from the 10% rule; Samsung-Modine talks still reported active (B"
+        },
+        {
+          "time": "2026-11-16T09:56:00-05:00",
+          "value": 89.012711,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "10 AM run (fired 9:54). Hold both, no trades. MOD 131.01 (-3.5% today) is -6.6% vs its 140.32 high, above the 10% line (126.29); Samsung-Modine talks still reported, no denial (Korea Herald, DataCenterFeed Nov 16); investor day Wed. DIA 520"
+        },
+        {
+          "time": "2026-11-16T11:03:30-05:00",
+          "value": 89.063422,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "11 AM run. Trades: sold DIA at 520.29 ($45.45), bought MU at 736.18 with the unsettled proceeds (settle Tue; MU sellable from Tue 9:30 AM ET; 7% trailing stop). MU bounced off its 717.40 low with higher lows and semis lifting off lows; TTWO"
+        },
+        {
+          "time": "2026-11-16T12:00:04-05:00",
+          "value": 89.270953,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Noon run. No trades (daily limit of 2 reached at 11 AM). MOD 132.00 is -5.9% vs 140.32 high, above 10% line (126.29); Samsung-Modine talks still reported (Korea Herald Nov 16), no denial; Modine investor day Wed Nov 18; hold. MU 735.83 lock"
+        },
+        {
+          "time": "2026-11-16T13:00:50-05:00",
+          "value": 88.225087,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "1 PM run. No trades (daily limit of 2 reached at 11 AM). MOD 130.40 is -7.1% vs 140.32 high, above 10% line (126.29); Samsung-Modine talks still reported (Korea Herald/Newspim Nov 16), no denial; investor day Wed Nov 18; hold. MU 727.47 loc"
+        },
+        {
+          "time": "2026-11-16T13:58:41-05:00",
+          "value": 88.300514,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "2 PM run. No trades (daily limit of 2 reached at 11 AM). MOD 130.65 is -6.9% vs 140.32 high, above 10% line (126.29); Samsung-Modine talks still reported (Korea Herald, Daily Racine Nov 16), no denial; investor day Wed Nov 18; hold. MU 727."
+        },
+        {
+          "time": "2026-11-16T15:00:12-05:00",
+          "value": 89.013453,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "3 PM run. No trades (daily limit of 2 reached at 11 AM). MOD 132.63 is -5.5% vs 140.32 high, above 10% line (126.29); no denial of Samsung-Modine talks; hold. MU 728.27 locked until Tue 9:30 AM ET; 7% trail stop 686.53 not hit. Total 89.01;"
+        },
+        {
+          "time": "2026-11-17T09:53:36-05:00",
+          "value": 88.257818,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "10 AM run (fired 9:53). No trades. DIA-sale lot settled at 9:30 so MU now sellable; cleared unsettled lot. MOD 133.53 is -4.8% vs 140.32 high, above 10% line (126.29); news check found no denial or end of Samsung-Modine talks; hold. MU 711."
+        },
+        {
+          "time": "2026-11-17T10:58:08-05:00",
+          "value": 84.64695,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "11 AM run (fired 10:57). MU 7% trailing stop fired: sold MU at 681.14 (-7.73% vs 738.20 high). Holding the proceeds as cash to the noon finish (1 trade today; no rebuy with an hour left). MOD 128.24 is -8.6% vs 140.32 high, above 10% line ("
+        },
+        {
+          "time": "2026-11-17T12:01:28-05:00",
+          "value": 84.571395,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "FINAL noon run. Scoring liquidation of MOD at 128.02. Final total 84.57 vs 101.285 start (-16.50%), 15 counted trades. Team Nicole last reported 98.13 (Mon noon) on 4 trades; Team Nicole wins unless their final differs. Game over."
+        },
+        {
+          "time": "2026-11-17T12:20:00-05:00",
+          "value": 100.0,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "Week 2 reset to $100"
+        },
+        {
+          "time": "2026-11-17T12:56:33-05:00",
+          "value": 100.0,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "1 PM run (fired 12:54). Opened Week 2 defensively ahead of NVDA earnings tonight: bought $45 BRK-B and $35 XLP, holding $20 cash. 2 trades."
+        },
+        {
+          "time": "2026-11-17T14:01:18-05:00",
+          "value": 99.887879,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "2 PM run: hold. Positions opened an hour ago, both within trailing stops (BRK-B flat, XLP -0.3%). Waiting on NVDA earnings tonight with $20 cash dry; community backdrop unchanged from 1 PM (risk-off, NVDA-dominated chatter). 0 trades."
+        },
+        {
+          "time": "2026-11-17T15:01:30-05:00",
+          "value": 99.733718,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "3 PM run: hold. BRK-B -0.04%, XLP -0.7% vs cost, both well inside trailing stops (7%/6%). Keeping $20 cash dry into NVDA earnings tonight. Community signal: Reddit (ApeWisdom) still NVDA-dominated (1388 mentions, up from 1046) with SPY chat"
+        }
+      ],
+      "trades": 2,
+      "note": "From the main game ledgers (hourly marks). Weekly reset to $100 each Tuesday noon ET."
+    },
+    {
+      "id": "team_nicole",
+      "name": "Team Nicole (Giles, as reported)",
+      "color": "#56B4E9",
+      "points": [
+        {
+          "time": "2026-11-09T21:28:00-05:00",
+          "value": 100.0,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Game start, $100 each (agreed rules)",
+          "source": "Game rules; thread 'The $100 Overnight Challenge' (e79547e9)"
+        },
+        {
+          "time": "2026-11-10T12:00:00-05:00",
+          "value": 101.17,
+          "era": "Round 1 (Nov 9-10)",
+          "note": "Round 1 final, 10 trades",
+          "source": "Giles email 2026-11-10 1:03 PM ET (msg 8210995)"
+        },
+        {
+          "time": "2026-11-10T13:33:00-05:00",
+          "value": 101.17,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Rematch start, balance carried forward",
+          "source": "Giles email 2026-11-10 1:32 PM ET (msg 8223529)"
+        },
+        {
+          "time": "2026-11-11T12:00:00-05:00",
+          "value": 103.23,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Wed noon check-in, 2 trades",
+          "source": "Giles email 2026-11-11 12:08 PM ET (msg 8644099)"
+        },
+        {
+          "time": "2026-11-12T12:00:00-05:00",
+          "value": 101.58,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Thu noon check-in, 4 trades",
+          "source": "Giles email 2026-11-12 12:06 PM ET (msg 9101036)"
+        },
+        {
+          "time": "2026-11-13T12:00:00-05:00",
+          "value": 99.23,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Fri noon check-in, 4 trades",
+          "source": "Giles email 2026-11-13 12:23 PM ET (msg 9546950)"
+        },
+        {
+          "time": "2026-11-16T12:00:00-05:00",
+          "value": 98.13,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Mon noon check-in, 4 trades",
+          "source": "Giles email 2026-11-16 12:46 PM ET (msg 10650736)"
+        },
+        {
+          "time": "2026-11-17T12:00:00-05:00",
+          "value": 96.06,
+          "era": "Week 1 (Nov 10-17)",
+          "note": "Week 1 final, 6 trades; Team Nicole won Week 1",
+          "source": "Giles email 2026-11-17 12:15 PM ET (msg 11177810)"
+        },
+        {
+          "time": "2026-11-17T12:20:00-05:00",
+          "value": 100.0,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "Week 2 reset to $100 (accepted by Giles)",
+          "source": "Giles email 2026-11-17 12:19 PM ET (msg 11180314)"
+        }
+      ],
+      "trades": null,
+      "note": "Only values Giles reported by email, at the time of each report. Never estimated."
+    }
+  ],
+  "summary": {
+    "as_of": "2026-11-18T08:13:42-05:00",
+    "trading_days": 1,
+    "lines": [
+      "Leader so far: Reddit only at +0.03% ($100.03).",
+      "Trailing: Pattern matching only at +0.00% ($100.00).",
+      "Beating the SPY buy-and-hold benchmark (+0.00%): 3 of 5 (Reddit only, X only, News only).",
+      "No experiment has closed a position yet, so win rates are not meaningful."
+    ],
+    "verdict": "Too early to reweight signals: 1 trading day(s) of data; the plan is to wait for at least 15.",
+    "ranking": [
+      {
+        "id": "reddit_only",
+        "name": "Reddit only",
+        "return_pct": 0.025
+      },
+      {
+        "id": "x_only",
+        "name": "X only",
+        "return_pct": 0.008
+      },
+      {
+        "id": "news_only",
+        "name": "News only",
+        "return_pct": 0.002
+      },
+      {
+        "id": "technical_trend_only",
+        "name": "Trend rules only",
+        "return_pct": 0.0
+      },
+      {
+        "id": "pattern_matching_only",
+        "name": "Pattern matching only",
+        "return_pct": 0.0
+      }
+    ]
+  }
+}
