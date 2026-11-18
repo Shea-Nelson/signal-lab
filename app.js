@@ -79,11 +79,15 @@ function drawChart() {
   let svg = `<svg xmlns="${ns}" viewBox="0 0 ${W} ${H}" aria-hidden="true"><defs><clipPath id="plot"><rect x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}"/></clipPath></defs>`;
   for (const v of niceTicks(y0, y1)) svg += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end">$${v.toFixed(v % 1 ? 1 : 0)}</text>`;
   svg += `<line class="base" x1="${m.l}" x2="${W - m.r}" y1="${Y(100)}" y2="${Y(100)}"/>`;
-  const days = Math.max(1, (x1 - x0) / 864e5), nT = Math.min(7, Math.max(2, Math.floor((W - 80) / 110)));
+  const days = Math.max(1, (x1 - x0) / 864e5), nT = Math.min(7, Math.max(2, Math.floor((W - 80) / 150)));
+  let lastPx = -1e9, lastLabel = "";
   for (let i = 0; i <= nT; i++) {
-    const x = uncomp(total * i / nT);
+    const x = uncomp(total * i / nT), px = X(x);
     const label = days < 3 ? etFmt.format(new Date(x)) : etDay.format(new Date(x));
-    svg += `<text x="${X(x)}" y="${H - 10}" text-anchor="${i === 0 ? "start" : i === nT ? "end" : "middle"}">${label}</text>`;
+    if (label === lastLabel || px - lastPx < (days < 3 ? 175 : 90)) continue;
+    if (i === nT && W - m.r - px < 0) continue;
+    svg += `<text x="${px}" y="${H - 10}" text-anchor="${i === 0 ? "start" : i === nT ? "end" : "middle"}">${label}</text>`;
+    lastPx = px; lastLabel = label;
   }
   svg += `<g clip-path="url(#plot)">`;
   for (const s of vis) {
@@ -126,7 +130,7 @@ function drawLegend() {
   const lg = document.getElementById("legend"); lg.innerHTML = "";
   for (const s of SERIES) {
     const b = el("button", { type: "button", "aria-pressed": String(!hidden.has(s.id)) },
-      `<span class="swatch${s.dashed ? " dash" : ""}${s.dots ? " dot" : ""}" style="background:${s.color};color:${s.color}"></span>${esc(s.name)}`);
+      `<span class="swatch${s.dashed ? " dash" : ""}${s.dots ? " dot" : ""}" style="${s.dashed ? "" : "background:" + s.color + ";"}color:${s.color}"></span>${esc(s.name)}`);
     b.onclick = () => { hidden.has(s.id) ? hidden.delete(s.id) : hidden.add(s.id); b.setAttribute("aria-pressed", String(!hidden.has(s.id))); drawChart(); };
     lg.appendChild(b);
   }

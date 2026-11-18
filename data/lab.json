@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T08:13:42-05:00",
+  "generated_at": "2026-11-18T08:20:31-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -142,26 +142,32 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
-          "value": 100.025127,
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.088295,
+          "decisions": [
             "BUY NVDA $40.00: Reddit's #1 name by a mile: 2,218 mentions vs 1,233 a day ago (+80%), 9,754 upvotes.",
             "BUY MU $35.00: Top-5 Reddit name with rising chatter: 151 mentions vs 124 (+22%), holding rank 4-5. Skipped SLS (#2, a 10x one-day mention spike in a small-cap biotech, pump risk) and SPY/QQQ (index chatter is mostly hedging talk). $25 cash kept."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.025127,
-        "return_pct": 0.025,
+        "current_value": 100.088295,
+        "return_pct": 0.088,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     },
     {
@@ -277,26 +283,32 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
-          "value": 100.00798,
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.059106,
+          "decisions": [
             "BUY SMH $40.00: X is loudest about a semiconductor rebound after Nvidia's beat: several premarket briefs say chips are leading (SOXX +2.5%, MU +2.5%). The semis ETF spreads that theme.",
             "BUY NVDA $30.00: X News headline story: record quarter, $130B guide, $150B buyback, 'shares climbed'. Sized small and $30 kept in cash because several X traders warn the premarket pop may fade ('half of that pop is already gone', 'bounce in a downtrend')."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.00798,
-        "return_pct": 0.008,
+        "current_value": 100.059106,
+        "return_pct": 0.059,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     },
     {
@@ -412,26 +424,32 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
-          "value": 100.001932,
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.08647,
+          "decisions": [
             "BUY NVDA $40.00: Clean beat-and-raise: revenue $115.8B vs ~$109B, Q4 guide $130B vs $125B, FY2028 growth raised to ~75%, extra $150B buyback.",
             "BUY TGT $35.00: Target beat and raised: adj EPS $2.65 vs $2.07 (includes $0.50 tariff refund), sales $27.1B vs $26.5B, comps +5.6% with traffic +5%, raised FY outlook. Skipped Lowe's (margins narrowed, outlook trimmed) and TTWO (already +7% on a release date, not new fundamentals). $25 cash kept."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.001932,
-        "return_pct": 0.002,
+        "current_value": 100.08647,
+        "return_pct": 0.086,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     },
     {
@@ -547,26 +565,32 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
+          "time": "2026-11-18T08:12:35-05:00",
           "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.02771,
+          "decisions": [
             "BUY XLP $30.00: Formula: eligible ETFs (close > 200-day, 50-day > 200-day) ranked by 3-month return: XLP +5.69% #1. SPY close 732.44 is only 0.01% above its 200-day 732.34 (not >1%), so risk-off sizing: 30% each, 40% cash.",
             "BUY XLV $30.00: Formula target #2: XLV 3-month +5.44%, close 185.24 > 200-day 160.52, 50-day 175.74 > 200-day. Risk-off sizing 30%."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.0,
-        "return_pct": 0.0,
+        "current_value": 100.02771,
+        "return_pct": 0.028,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     },
     {
@@ -682,26 +706,32 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
+          "time": "2026-11-18T08:12:35-05:00",
           "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 99.980344,
+          "decisions": [
             "BUY COST $40.00: Chart: fresh breakout to a 52-week high (close 1110.08, 0.3% off the high) after a steady climb, 4 green days of the last 5, well above its 20/50-day lines, while SPY sits 6% off its high. Strongest relative strength on the watchlist.",
             "BUY AAPL $30.00: Chart: holding 1.2% under its high in a tight range while QQQ is 13.5% off its high; higher lows above the 20 and 50-day lines. Avoided NVDA/MU/SMH (falling knives, 30-41% off highs, below all averages) and SLS (parabolic +156% one-day spike). $30 cash kept."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.0,
-        "return_pct": 0.0,
+        "current_value": 99.980344,
+        "return_pct": -0.02,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "max_drawdown_pct": -0.02,
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     },
     {
@@ -765,25 +795,31 @@
       ],
       "history": [
         {
-          "time": "2026-11-18T08:13:42-05:00",
+          "time": "2026-11-18T08:12:35-05:00",
           "value": 100.0,
           "decisions": [
-            "Experiment start: $100 pretend cash",
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 99.926451,
+          "decisions": [
             "BUY SPY $100.00: Benchmark: buy $100 SPY once at experiment start and hold."
           ]
         }
       ],
       "stats": {
-        "current_value": 100.0,
-        "return_pct": 0.0,
+        "current_value": 99.926451,
+        "return_pct": -0.074,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": 0.0,
-        "snapshots": 1,
-        "as_of": "2026-11-18T08:13:42-05:00"
+        "max_drawdown_pct": -0.074,
+        "snapshots": 2,
+        "as_of": "2026-11-18T08:20:31-05:00"
       }
     }
   ],
@@ -1123,12 +1159,12 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-18T08:13:42-05:00",
+    "as_of": "2026-11-18T08:20:31-05:00",
     "trading_days": 1,
     "lines": [
-      "Leader so far: Reddit only at +0.03% ($100.03).",
-      "Trailing: Pattern matching only at +0.00% ($100.00).",
-      "Beating the SPY buy-and-hold benchmark (+0.00%): 3 of 5 (Reddit only, X only, News only).",
+      "Leader so far: Reddit only at +0.09% ($100.09).",
+      "Trailing: Pattern matching only at -0.02% ($99.98).",
+      "Beating the SPY buy-and-hold benchmark (-0.07%): 5 of 5 (Reddit only, X only, News only, Trend rules only, Pattern matching only).",
       "No experiment has closed a position yet, so win rates are not meaningful."
     ],
     "verdict": "Too early to reweight signals: 1 trading day(s) of data; the plan is to wait for at least 15.",
@@ -1136,27 +1172,27 @@
       {
         "id": "reddit_only",
         "name": "Reddit only",
-        "return_pct": 0.025
-      },
-      {
-        "id": "x_only",
-        "name": "X only",
-        "return_pct": 0.008
+        "return_pct": 0.088
       },
       {
         "id": "news_only",
         "name": "News only",
-        "return_pct": 0.002
+        "return_pct": 0.086
+      },
+      {
+        "id": "x_only",
+        "name": "X only",
+        "return_pct": 0.059
       },
       {
         "id": "technical_trend_only",
         "name": "Trend rules only",
-        "return_pct": 0.0
+        "return_pct": 0.028
       },
       {
         "id": "pattern_matching_only",
         "name": "Pattern matching only",
-        "return_pct": 0.0
+        "return_pct": -0.02
       }
     ]
   }
