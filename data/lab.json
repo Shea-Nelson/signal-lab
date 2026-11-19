@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:46:22-05:00",
+  "generated_at": "2026-11-19T08:26:37-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -210,6 +210,44 @@
           ],
           "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)",
           "trade_id": "3f908bda6a906def"
+        },
+        {
+          "id": "1fd3d344360a6f00",
+          "time": "2026-11-18T12:58:04-05:00",
+          "action": "hold",
+          "reason": "Hold NVDA/MU/AMD: they remain the top Reddit-mentioned names (NVDA 2167, AMD 173 rising, MU 127 cooling but top 5). Daily trade limit used; nothing new to act on.",
+          "evidence": [
+            "ApeWisdom 1 PM: NVDA 2167 mentions (24h ago 1379), AMD 173 (100), MU 127 (156), NBIS 112, SPCX 100. Held names still top Reddit chatter; already at 3 trades today, no new signal to rotate.",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1257.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "2af0cac63b89d071",
+          "time": "2026-11-18T13:53:50-05:00",
+          "action": "hold",
+          "reason": "Hold NVDA/MU/AMD: still the top Reddit-mentioned single stocks (NVDA 2147, AMD 175 rising, MU 129 top 5). Daily trade limit used; nothing new.",
+          "evidence": [
+            "ApeWisdom 2 PM: NVDA 2147 (24h ago 1383), SPY 310, QQQ 198, AMD 175 (97), MU 129 (152), NBIS 111, SPCX 93",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1353.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "1500",
+          "time": "2026-11-18T14:58:06-05:00",
+          "action": "hold",
+          "reason": "Hold NVDA/MU/AMD: still top Reddit single-stock mentions (NVDA 2117, AMD 181 rising, MU 124 top 5). NBIS rising (111) but daily trade limit used; no new trade.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-18_1457.json"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
         }
       ],
       "history": [
@@ -250,22 +288,43 @@
           ]
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 97.459681,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 97.491101,
+          "decisions": [
+            "HOLD: Hold NVDA/MU/AMD: they remain the top Reddit-mentioned names (NVDA 2167, AMD 173 rising, MU 127 cooling but top 5). Daily trade limit used; nothing new to act on."
+          ]
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 97.758365,
+          "decisions": [
+            "HOLD: Hold NVDA/MU/AMD: still the top Reddit-mentioned single stocks (NVDA 2147, AMD 175 rising, MU 129 top 5). Daily trade limit used; nothing new."
+          ]
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 97.45908,
+          "decisions": [
+            "HOLD: Hold NVDA/MU/AMD: still top Reddit single-stock mentions (NVDA 2117, AMD 181 rising, MU 124 top 5). NBIS rising (111) but daily trade limit used; no new trade."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 100.580436,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 97.459681,
-        "return_pct": -2.54,
+        "current_value": 100.580436,
+        "return_pct": 0.58,
         "trades": 3,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -3.871,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -439,6 +498,44 @@
             }
           ],
           "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "68d208d0fdb85092",
+          "time": "2026-11-18T12:58:04-05:00",
+          "action": "hold",
+          "reason": "X News is risk-off (Iran strike plunge story, 'no trade is also a trade' threads); no positive semi catalyst to add to SMH, no fresh reason to dump it either. Keep cash.",
+          "evidence": [
+            "X search_news 1 PM: US Stocks Plunge After Strikes on Iranian Missile Site; trader discipline threads; AAOI dilution backlash",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1258.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "05a37ffda0af48ef",
+          "time": "2026-11-18T13:53:51-05:00",
+          "action": "hold",
+          "reason": "X News still risk-off (Iran strike plunge story, Druckenmiller in preservation mode, capital-protection threads); no positive semi catalyst to add to SMH and no fresh reason to dump it. Keep cash.",
+          "evidence": [
+            "X search_news 2 PM: Iran strike losses; Druckenmiller uncertain; discipline threads; AAOI dilution",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1353.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "1500",
+          "time": "2026-11-18T14:58:06-05:00",
+          "action": "hold",
+          "reason": "X News centers on hawkish Fed-minutes risk and NVDA turmoil; no positive semi catalyst to add SMH and no fresh reason to dump it. Keep cash.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-18_1457.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
         }
       ],
       "history": [
@@ -479,22 +576,43 @@
           ]
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 97.863335,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 97.847984,
+          "decisions": [
+            "HOLD: X News is risk-off (Iran strike plunge story, 'no trade is also a trade' threads); no positive semi catalyst to add to SMH, no fresh reason to dump it either. Keep cash."
+          ]
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 97.881245,
+          "decisions": [
+            "HOLD: X News still risk-off (Iran strike plunge story, Druckenmiller in preservation mode, capital-protection threads); no positive semi catalyst to add to SMH and no fresh reason to dump it. Keep cash."
+          ]
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 97.779249,
+          "decisions": [
+            "HOLD: X News centers on hawkish Fed-minutes risk and NVDA turmoil; no positive semi catalyst to add SMH and no fresh reason to dump it. Keep cash."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 99.047983,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 97.863335,
-        "return_pct": -2.137,
+        "current_value": 99.047983,
+        "return_pct": -0.952,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.208733,
         "max_drawdown_pct": -2.557,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -668,6 +786,44 @@
             }
           ],
           "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "e7885e9386e16b0b",
+          "time": "2026-11-18T12:58:04-05:00",
+          "action": "hold",
+          "reason": "TGT thesis confirmed by news (beat + raised guide, +5-7%); hold. Broader news risk-off (Dow -1.3%, Fed minutes this afternoon, 10y 5.1%), so keep cash rather than chase TJX after a 10% jump.",
+          "evidence": [
+            "Motley Fool 11:32 ET midday; Benzinga 12:16 ET; AP 11:45 ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1258.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "dc8354229f903bb5",
+          "time": "2026-11-18T13:53:51-05:00",
+          "action": "hold",
+          "reason": "TGT thesis intact (smashed expectations per Yahoo). Market mixed ahead of 2 PM Fed minutes with Waller pushing a half-point hike; keep cash rather than buy into the minutes or chase post-earnings pops.",
+          "evidence": [
+            "Yahoo Finance 1:41 PM; CNBC Waller/yields; AP 12:57 PM",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1353.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "1500",
+          "time": "2026-11-18T14:58:07-05:00",
+          "action": "hold",
+          "reason": "TGT thesis intact (smashed expectations, breakout per IBD). Fed minutes hawkish (more hikes likely), S&P slipped red; keep cash, don't buy into the hawkish tape.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-18_1457.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
         }
       ],
       "history": [
@@ -708,22 +864,43 @@
           ]
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 101.13093,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 101.120407,
+          "decisions": [
+            "HOLD: TGT thesis confirmed by news (beat + raised guide, +5-7%); hold. Broader news risk-off (Dow -1.3%, Fed minutes this afternoon, 10y 5.1%), so keep cash rather than chase TJX after a 10% jump."
+          ]
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 101.334186,
+          "decisions": [
+            "HOLD: TGT thesis intact (smashed expectations per Yahoo). Market mixed ahead of 2 PM Fed minutes with Waller pushing a half-point hike; keep cash rather than buy into the minutes or chase post-earnings pops."
+          ]
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 100.548852,
+          "decisions": [
+            "HOLD: TGT thesis intact (smashed expectations, breakout per IBD). Fed minutes hawkish (more hikes likely), S&P slipped red; keep cash, don't buy into the hawkish tape."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 99.835515,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 101.13093,
-        "return_pct": 1.131,
+        "current_value": 99.835515,
+        "return_pct": -0.164,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.662048,
-        "max_drawdown_pct": -0.344,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "max_drawdown_pct": -1.479,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -871,6 +1048,44 @@
             "daily formula from 8:13 AM ET run"
           ],
           "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "4406563738fe09bf",
+          "time": "2026-11-18T12:58:04-05:00",
+          "action": "hold",
+          "reason": "Formula checked once a day at the first run; no change intraday. XLP and XLV still above 200-day.",
+          "evidence": [
+            "daily_stats 1 PM: XLP 91.58 vs sma200 85.0; XLV 182.41 vs sma200 160.7; SPY 731.6 vs sma200 732.6 (risk-off regime)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1257.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "97132b0f90677029",
+          "time": "2026-11-18T13:53:51-05:00",
+          "action": "hold",
+          "reason": "Formula applied once a day at the first run; no intraday change. XLP and XLV still above 200-day.",
+          "evidence": [
+            "daily_stats 2 PM: XLP sma200 85.0, XLV sma200 160.7, SPY sma200 732.6",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1353.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "1500",
+          "time": "2026-11-18T14:58:07-05:00",
+          "action": "hold",
+          "reason": "Formula applied once a day at the first run; no intraday change. XLP and XLV still above 200-day.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1457.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
         }
       ],
       "history": [
@@ -911,22 +1126,43 @@
           ]
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 100.012252,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 99.9705,
+          "decisions": [
+            "HOLD: Formula checked once a day at the first run; no change intraday. XLP and XLV still above 200-day."
+          ]
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 99.964177,
+          "decisions": [
+            "HOLD: Formula applied once a day at the first run; no intraday change. XLP and XLV still above 200-day."
+          ]
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 99.644612,
+          "decisions": [
+            "HOLD: Formula applied once a day at the first run; no intraday change. XLP and XLV still above 200-day."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 99.289899,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.012252,
-        "return_pct": 0.012,
+        "current_value": 99.289899,
+        "return_pct": -0.71,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -0.415,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "max_drawdown_pct": -0.908,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -1074,6 +1310,44 @@
             }
           ],
           "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "46fb40b833f7a78f",
+          "time": "2026-11-18T12:58:05-05:00",
+          "action": "hold",
+          "reason": "COST pressing its 52w high (1110.6 vs 1113.7) while SPY sits on its 200-day; AAPL holding near highs (353.5 vs 356.3). Both patterns intact, no break.",
+          "evidence": [
+            "daily_stats 1 PM: COST 1110.6 sma50 979 hi52 1113.7; AAPL 353.5 sma50 341 hi52 356.3; SPY 731.6 < sma200 732.6",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1257.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "184f1203e22ae8b7",
+          "time": "2026-11-18T13:53:51-05:00",
+          "action": "hold",
+          "reason": "COST still pressing its 52w high and AAPL holding near highs well above 50-day; no pattern break, no new setup worth a trade.",
+          "evidence": [
+            "daily_stats 2 PM: COST sma50 979 hi52 1113.7; AAPL sma50 341 hi52 356.3",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1353.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "1500",
+          "time": "2026-11-18T14:58:07-05:00",
+          "action": "hold",
+          "reason": "COST near its 52w high, AAPL holding above 20/50-day; no pattern break, no new setup.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-18_1457.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
         }
       ],
       "history": [
@@ -1114,22 +1388,86 @@
           ]
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 100.466123,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 100.461875,
+          "decisions": [
+            "HOLD: COST pressing its 52w high (1110.6 vs 1113.7) while SPY sits on its 200-day; AAPL holding near highs (353.5 vs 356.3). Both patterns intact, no break."
+          ]
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 100.531156,
+          "decisions": [
+            "HOLD: COST still pressing its 52w high and AAPL holding near highs well above 50-day; no pattern break, no new setup worth a trade."
+          ]
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 100.129797,
+          "decisions": [
+            "HOLD: COST near its 52w high, AAPL holding above 20/50-day; no pattern break, no new setup."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 99.840077,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.466123,
-        "return_pct": 0.466,
+        "current_value": 99.840077,
+        "return_pct": -0.16,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -0.446,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "max_drawdown_pct": -0.687,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
+      }
+    },
+    {
+      "id": "research_desk",
+      "name": "Research desk",
+      "kind": "experiment",
+      "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+      "color": "#882255",
+      "short_rule": "Buys only after a written bull thesis plus a skeptic (Bear) check; otherwise holds cash. AI and semiconductor names only.",
+      "rules_md": "# Research desk\n\n**Allowed input:** the same Reddit (ApeWisdom), X, news, trend, and pattern evidence the other experiment lines already gather, plus SEC EDGAR recent filings (`data.sec.gov` submissions) and the earnings/macro calendar (Yahoo earnings dates and the Fed FOMC calendar) when those are reachable without keys. Prices are used for sizing, marking, trend, and pattern stats. The thesis and Bear check are written from a fixed scoring rule, not a model.\n\n**Not allowed:** crypto, margin, shorts, options, leveraged or inverse ETFs, paid APIs, secrets, or any backfilled history from before this line opened.\n\n**Universe:** NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, SMH.\n\n**Playbook:**\n- Start with $100 cash on Nov 18, 2026. Do not backfill earlier hours. The first buy-or-hold decision is at the next live hourly run (weekdays 10 AM to 3 PM ET).\n- For each name, write a short bull thesis from the evidence, then a skeptic (\"Bear\") check. If the Bear check fails, do not buy that name. If fewer than two names pass, hold cash (and sell holdings that no longer pass, when sellable).\n- Target 2 to 3 positions at about 30-40% each (38% each for two names, 32% each for three). At most 3 trades a day. Do not trim a name that is still a target.\n- Save every thesis and Bear check under `evidence/research_desk/` so the reasoning can be audited later.\n- If a source fails, log the failure and continue. Never crash the hourly run, invent a price, or place a real order.\n\nThe hourly command `python3 run_experiments.py run` (and the noon `run --publish`) already runs this playbook during the live window; no routine change is required.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T17:25:39-05:00",
+      "starting_cash": 100.0,
+      "cash": 100.0,
+      "settled_cash": 100.0,
+      "unsettled": [],
+      "positions": [],
+      "trades": [],
+      "decisions": [],
+      "history": [
+        {
+          "time": "2026-11-18T17:25:39-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Line opened Nov 18, 2026, 5:25 PM ET: $100 pretend cash only. No backfill. First decision at the next live hourly run (weekdays 10 AM to 3 PM ET)."
+          ]
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 100.0,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 100.0,
+        "return_pct": 0.0,
+        "trades": 0,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": 0.0,
+        "snapshots": 2,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -1222,22 +1560,37 @@
           "decisions": []
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 99.628163,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 99.611861,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 99.792289,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 99.467445,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 100.622446,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 99.628163,
-        "return_pct": -0.372,
+        "current_value": 100.622446,
+        "return_pct": 0.622,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -0.874,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -1330,22 +1683,37 @@
           "decisions": []
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 100.438874,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 100.386625,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 100.924764,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 100.141065,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 102.142111,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.438874,
-        "return_pct": 0.439,
+        "current_value": 102.142111,
+        "return_pct": 2.142,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.196,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     },
     {
@@ -1438,22 +1806,406 @@
           "decisions": []
         },
         {
-          "time": "2026-11-18T12:46:22-05:00",
-          "value": 101.59589,
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 102.088025,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 101.451767,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 101.233827,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 102.058844,
           "decisions": []
         }
       ],
       "stats": {
-        "current_value": 101.59589,
-        "return_pct": 1.596,
+        "current_value": 102.058844,
+        "return_pct": 2.059,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.058,
-        "snapshots": 6,
-        "as_of": "2026-11-18T12:46:22-05:00"
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
+      }
+    },
+    {
+      "id": "googl_hold",
+      "name": "Alphabet buy & hold",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of GOOGL once and holds.",
+      "color": "#44AA99",
+      "short_rule": "Benchmark only: $100 of GOOGL bought at the start and never traded.",
+      "rules_md": "# Alphabet buy & hold\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of GOOGL (Alphabet Inc.) once at the experiment start and never trade again. This line shows how Alphabet alone would have done next to the other portfolios.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "GOOGL",
+          "shares": 0.3538946101850869,
+          "cost": 100.0,
+          "avg_price": 282.57
+        }
+      ],
+      "trades": [
+        {
+          "id": "0cdda89746fbe3cb",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "GOOGL",
+          "price": 282.57,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:00-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 GOOGL once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.3538946101850869,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "0cdda89746fbe3cb",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 GOOGL once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of GOOGL once and holds.",
+          "trade_id": "0cdda89746fbe3cb"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.038928,
+          "decisions": [
+            "BUY GOOGL $100.00: Benchmark: buy $100 GOOGL once at experiment start and hold."
+          ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.322048,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 99.790742,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 99.148886,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 99.515169,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 100.300815,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 100.32558,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 104.073327,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 104.073327,
+        "return_pct": 4.073,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": -1.169,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
+      }
+    },
+    {
+      "id": "meta_hold",
+      "name": "Meta buy & hold",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of META once and holds.",
+      "color": "#AA4499",
+      "short_rule": "Benchmark only: $100 of META bought at the start and never traded.",
+      "rules_md": "# Meta buy & hold\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of META (Meta Platforms, Inc.) once at the experiment start and never trade again. This line shows how Meta alone would have done next to the other portfolios.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "META",
+          "shares": 0.16161616161616163,
+          "cost": 100.0,
+          "avg_price": 618.75
+        }
+      ],
+      "trades": [
+        {
+          "id": "7379ed64d1cd0ec9",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "META",
+          "price": 618.75,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:00-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 META once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.16161616161616163,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "7379ed64d1cd0ec9",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 META once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of META once and holds.",
+          "trade_id": "7379ed64d1cd0ec9"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 99.846465,
+          "decisions": [
+            "BUY META $100.00: Benchmark: buy $100 META once at experiment start and hold."
+          ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 100.100201,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 99.235559,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 99.140201,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 99.686464,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 99.615353,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 99.387478,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 101.233131,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 101.233131,
+        "return_pct": 1.233,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": -0.959,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
+      }
+    },
+    {
+      "id": "nvda_hold",
+      "name": "Nvidia buy & hold",
+      "kind": "benchmark",
+      "source": "None. Buys $100 of NVDA once and holds.",
+      "color": "#117733",
+      "short_rule": "Benchmark only: $100 of NVDA bought at the start and never traded.",
+      "rules_md": "# Nvidia buy & hold\n\n**Allowed input:** none. This is a reference line, not a signal.\n\n**Rule:** buy $100 of NVDA (NVIDIA Corporation) once at the experiment start and never trade again. This line shows how Nvidia alone would have done next to the other portfolios.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
+      "start_time": "2026-11-18T08:12:35-05:00",
+      "starting_cash": 100.0,
+      "cash": 0.0,
+      "settled_cash": 0.0,
+      "unsettled": [],
+      "positions": [
+        {
+          "symbol": "NVDA",
+          "shares": 0.6268806419257773,
+          "cost": 100.0,
+          "avg_price": 159.52
+        }
+      ],
+      "trades": [
+        {
+          "id": "cbf8ca1e18382683",
+          "time": "2026-11-18T08:13:40-05:00",
+          "symbol": "NVDA",
+          "price": 159.52,
+          "quote_source": "Yahoo Finance chart API 1m (pre), bar 2026-11-18 08:13 ET",
+          "quote_time": "2026-11-18T08:13:00-05:00",
+          "session": "pre",
+          "reason": "Benchmark: buy $100 NVDA once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "side": "buy",
+          "shares": 0.6268806419257773,
+          "amount": 100.0,
+          "funding": [
+            {
+              "amount": 100.0,
+              "settled": true
+            }
+          ],
+          "earliest_sell": "2026-11-18T08:13:40-05:00"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "cbf8ca1e18382683",
+          "time": "2026-11-18T08:13:40-05:00",
+          "action": "buy",
+          "reason": "Benchmark: buy $100 NVDA once at experiment start and hold.",
+          "evidence": [
+            "No signal used."
+          ],
+          "source": "None. Buys $100 of NVDA once and holds.",
+          "trade_id": "cbf8ca1e18382683"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T08:12:35-05:00",
+          "value": 100.0,
+          "decisions": [
+            "Experiment start: $100 pretend cash"
+          ]
+        },
+        {
+          "time": "2026-11-18T08:20:31-05:00",
+          "value": 100.225677,
+          "decisions": [
+            "BUY NVDA $100.00: Benchmark: buy $100 NVDA once at experiment start and hold."
+          ]
+        },
+        {
+          "time": "2026-11-18T09:59:40-05:00",
+          "value": 97.053666,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T10:56:46-05:00",
+          "value": 95.890795,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T11:57:14-05:00",
+          "value": 94.768683,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T12:58:05-05:00",
+          "value": 95.157346,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T13:53:52-05:00",
+          "value": 95.273317,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-18T14:58:08-05:00",
+          "value": 94.533603,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-19T08:26:37-05:00",
+          "value": 95.876755,
+          "decisions": []
+        }
+      ],
+      "stats": {
+        "current_value": 95.876755,
+        "return_pct": -4.123,
+        "trades": 1,
+        "closed_sells": 0,
+        "wins": 0,
+        "win_rate": null,
+        "realized_pnl": 0.0,
+        "max_drawdown_pct": -5.679,
+        "snapshots": 9,
+        "as_of": "2026-11-19T08:26:37-05:00"
       }
     }
   ],
@@ -1732,6 +2484,24 @@
           "value": 98.743664,
           "era": "Week 2 (Nov 17-24)",
           "note": "Noon run: hold. BRK-B -2.3%, XLP -0.65% vs cost, both well inside trailing stops (7%/6%). Fresh risk-off shock: reported US strike on an Iranian missile site sent stocks lower, Dow -1%+, Waller floating a half-point December hike, S&P under"
+        },
+        {
+          "time": "2026-11-18T12:58:20-05:00",
+          "value": 98.659111,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "1 PM run: hold. BRK-B ~-2.5%, XLP ~-0.6% vs cost, inside trailing stops (7%/6%). Dow -1.3% on Iran strike headlines, Fed minutes due this afternoon, 10y 5.1%; staples/defensives holding. Not chasing TJX/TGT after 6-10% earnings pops. Commun"
+        },
+        {
+          "time": "2026-11-18T13:54:09-05:00",
+          "value": 98.577181,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "2 PM run: hold. BRK-B ~-2.7%, XLP ~-0.5% vs cost, inside trailing stops (7%/6%). Market mixed (Dow -0.8%, S&P ~flat, Nasdaq +0.5%) with FOMC minutes at 2 PM and Waller pushing a half-point December hike; not trading into the minutes or chas"
+        },
+        {
+          "time": "2026-11-18T15:00:30-05:00",
+          "value": 98.405875,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "3 PM run: hold. BRK-B ~-2.8%, XLP ~-1.0% vs cost, inside trailing stops (7%/6%). Fed minutes hawkish (almost all officials see more hikes, a couple floated a bigger December move); S&P slipped to -0.3%, Dow -1.2%. Not buying into the hawkis"
         }
       ],
       "trades": 2,
@@ -1811,40 +2581,45 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-18T12:46:22-05:00",
-    "trading_days": 1,
+    "as_of": "2026-11-19T08:26:37-05:00",
+    "trading_days": 2,
     "lines": [
-      "Leader so far: News only at +1.13% ($101.13).",
-      "Trailing: Reddit only at -2.54% ($97.46).",
-      "Beating the SPY buy-and-hold benchmark (-0.37%): 3 of 5 (News only, Trend rules only, Pattern matching only).",
+      "Leader so far: Reddit only at +0.58% ($100.58).",
+      "Trailing: X only at -0.95% ($99.05).",
+      "Beating the SPY buy-and-hold benchmark (+0.62%): 0 of 6.",
       "Best win rate on closed sells: X only (0/1)."
     ],
-    "verdict": "Too early to reweight signals: 1 trading day(s) of data; the plan is to wait for at least 15.",
+    "verdict": "Too early to reweight signals: 2 trading day(s) of data; the plan is to wait for at least 15.",
     "ranking": [
       {
-        "id": "news_only",
-        "name": "News only",
-        "return_pct": 1.131
+        "id": "reddit_only",
+        "name": "Reddit only",
+        "return_pct": 0.58
+      },
+      {
+        "id": "research_desk",
+        "name": "Research desk",
+        "return_pct": 0.0
       },
       {
         "id": "pattern_matching_only",
         "name": "Pattern matching only",
-        "return_pct": 0.466
+        "return_pct": -0.16
+      },
+      {
+        "id": "news_only",
+        "name": "News only",
+        "return_pct": -0.164
       },
       {
         "id": "technical_trend_only",
         "name": "Trend rules only",
-        "return_pct": 0.012
+        "return_pct": -0.71
       },
       {
         "id": "x_only",
         "name": "X only",
-        "return_pct": -2.137
-      },
-      {
-        "id": "reddit_only",
-        "name": "Reddit only",
-        "return_pct": -2.54
+        "return_pct": -0.952
       }
     ]
   }
