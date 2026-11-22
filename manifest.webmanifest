@@ -1,0 +1,36 @@
+{
+  "name": "Signal Lab",
+  "short_name": "Signal Lab",
+  "id": "/signal-lab/",
+  "start_url": "/signal-lab/",
+  "scope": "/signal-lab/",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#121316",
+  "icons": [
+    {
+      "src": "/signal-lab/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/signal-lab/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/signal-lab/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/signal-lab/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
