@@ -5175,6 +5175,13 @@
           "era": "Week 2 (Nov 17-24)",
           "note": "Fri noon check-in, Week 2, 4 trades (2 today), 0 GFVs",
           "source": "Giles email 2026-11-20 12:37 PM ET (msg 12828738)"
+        },
+        {
+          "time": "2026-11-23T12:00:00-05:00",
+          "value": 98.1,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "Mon noon check-in, Week 2, 4 trades (none today), 0 GFVs",
+          "source": "Giles email 2026-11-23 12:21 PM ET (msg 13963574)"
         }
       ],
       "trades": null,
