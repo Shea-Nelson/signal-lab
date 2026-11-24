@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T12:06:09-05:00",
+  "generated_at": "2026-11-24T12:04:35-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -40,14 +40,8 @@
       "start_time": "2026-11-18T08:12:35-05:00",
       "starting_cash": 100.0,
       "cash": 0.011167,
-      "settled_cash": 0.0,
-      "unsettled": [
-        {
-          "amount": 0.011167,
-          "source": "SPCX sale 2026-11-23T10:01:37-05:00",
-          "settles": "2026-11-24T09:30:00-05:00"
-        }
-      ],
+      "settled_cash": 0.011167,
+      "unsettled": [],
       "positions": [
         {
           "symbol": "MU",
@@ -528,6 +522,43 @@
             }
           ],
           "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "f53fe9d467bc6413",
+          "time": "2026-11-23T14:59:38-05:00",
+          "action": "hold",
+          "reason": "3 PM: hold. ApeWisdom NVDA 1499 mentions vs 263 a day ago (still #1, rising), SPY 363 vs 110, QQQ 205 vs 68, AMD 109 vs 52, MU 81 vs 34. Basket already matches the chatter leaders; no new name breaking in except HR/NYT one-off spikes.",
+          "evidence": [
+            "ApeWisdom all-stocks page 1 ~2:59 PM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-23_1500.txt"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "reddit_only_2026-11-24_1000",
+          "time": "2026-11-24T09:58:55-05:00",
+          "action": "hold",
+          "reason": "Hold MU, AMD, NVDA. ApeWisdom ~10 AM: NVDA #1 1637 mentions (vs 637 24h ago), AMD #4 131 (vs 50), MU #6 93 (vs 50); all top 15 and rising, no sell trigger; fully invested.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-24_1000.txt"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "reddit_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:08-05:00",
+          "action": "hold",
+          "reason": "Hold MU, AMD, NVDA. ApeWisdom ~12 PM: NVDA #1 1334 mentions (vs 1115), AMD #4 145 (vs 84), MU #6 91 (vs 63); all top 15 and up day over day, no sell trigger; fully invested.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/apewisdom_2026-11-24_1200.txt"
+            }
+          ],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
         }
       ],
       "history": [
@@ -678,19 +709,40 @@
           "decisions": [
             "HOLD: Noon: hold. ApeWisdom NVDA 1214 mentions vs 281 a day ago (#1 by far), SPY 342 vs 93, QQQ 197 vs 55, MU 64 vs 40, AMD 89 vs 61. Our MU/AMD/NVDA basket matches the crowd's focus; no cash to add and NVDA funding unsettled. No new Reddit leader to rotate into."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 94.447394,
+          "decisions": [
+            "HOLD: 3 PM: hold. ApeWisdom NVDA 1499 mentions vs 263 a day ago (still #1, rising), SPY 363 vs 110, QQQ 205 vs 68, AMD 109 vs 52, MU 81 vs 34. Basket already matches the chatter leaders; no new name breaking in except HR/NYT one-off spikes."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 88.25773,
+          "decisions": [
+            "HOLD: Hold MU, AMD, NVDA. ApeWisdom ~10 AM: NVDA #1 1637 mentions (vs 637 24h ago), AMD #4 131 (vs 50), MU #6 93 (vs 50); all top 15 and rising, no sell trigger; fully invested."
+          ]
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 85.016656,
+          "decisions": [
+            "HOLD: Hold MU, AMD, NVDA. ApeWisdom ~12 PM: NVDA #1 1334 mentions (vs 1115), AMD #4 145 (vs 84), MU #6 91 (vs 63); all top 15 and up day over day, no sell trigger; fully invested."
+          ]
         }
       ],
       "stats": {
-        "current_value": 95.360705,
-        "return_pct": -4.639,
+        "current_value": 85.016656,
+        "return_pct": -14.983,
         "trades": 7,
         "closed_sells": 2,
         "wins": 1,
         "win_rate": 50.0,
         "realized_pnl": -1.408833,
-        "max_drawdown_pct": -16.265,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "max_drawdown_pct": -16.946,
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -703,17 +755,16 @@
       "rules_md": "# X only\n\n**Allowed input:** public X posts (`x` namespace `search_posts_all`, recent premarket and market posts, cashtags) and X News stories (`search_news`, which are summaries of X posts).\n\n**Not allowed:** web news articles, Reddit, price charts or moving averages, the runner's own market view.\n\n**Playbook:**\n- Buy the tickers and themes X is most bullish on right now, weighting posts with real engagement and multiple independent accounts, up to 2 or 3 positions.\n- Hold back cash when X posts warn of a fade or a risk-off tape.\n- Sell when X sentiment on a holding turns clearly negative or the theme stops being discussed.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
       "start_time": "2026-11-18T08:12:35-05:00",
       "starting_cash": 100.0,
-      "cash": 67.161418,
+      "cash": 94.273547,
       "settled_cash": 67.161418,
-      "unsettled": [],
-      "positions": [
+      "unsettled": [
         {
-          "symbol": "NVDA",
-          "shares": 0.1796945226018818,
-          "cost": 30.0,
-          "avg_price": 166.9499969482422
+          "amount": 27.112129,
+          "source": "NVDA sale 2026-11-24T12:04:08-05:00",
+          "settles": "2026-11-25T09:30:00-05:00"
         }
       ],
+      "positions": [],
       "trades": [
         {
           "id": "b54614c9760ecfea",
@@ -834,6 +885,27 @@
             }
           ],
           "earliest_sell": "2026-11-23T10:01:52-05:00"
+        },
+        {
+          "id": "x_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:08-05:00",
+          "symbol": "NVDA",
+          "price": 150.87899780273438,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-24 12:04 ET",
+          "quote_time": "2026-11-24T12:04:03-05:00",
+          "session": "regular",
+          "reason": "Sell NVDA. X sentiment on NVDA has turned clearly negative since 10 AM: posts call it a selloff on tariff headlines ('Tariff headlines broke the chip trade', 'NVDA dropping 8%, is anything safe in this selloff?'), a second day of Nvidia drama; only scattered bounce talk. Rule: sell when X sentiment on a holding turns clearly negative. Go to cash.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-24_1200.md"
+            }
+          ],
+          "side": "sell",
+          "shares": 0.1796945226018818,
+          "amount": 27.112129,
+          "cost_basis": 30.0,
+          "realized_pnl": -2.887871,
+          "proceeds_settle": "2026-11-25T09:30:00-05:00"
         }
       ],
       "decisions": [
@@ -1090,6 +1162,44 @@
             }
           ],
           "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "03f1534b8c2b4009",
+          "time": "2026-11-23T14:59:39-05:00",
+          "action": "hold",
+          "reason": "3 PM: hold NVDA, keep cash. X still euphoric into the close (bullish-into-close calls, TSLA +12%), but posts flag extended/reversal risk and NVDA still far below its Oct record. Not adding to a spike day.",
+          "evidence": [
+            "X search_news + search_posts_all ~3 PM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-23_1500.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "x_only_2026-11-24_1000",
+          "time": "2026-11-24T09:58:56-05:00",
+          "action": "hold",
+          "reason": "Hold NVDA, keep $67 cash. X posts say the Nvidia euphoria is fading at the open (chips leading the pullback, profit-taking) but some call it rotation/digestion, not a reversal; sentiment cautious rather than clearly negative on NVDA, and fade warnings say keep cash back.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-24_1000.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "x_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:08-05:00",
+          "action": "sell",
+          "reason": "Sell NVDA. X sentiment on NVDA has turned clearly negative since 10 AM: posts call it a selloff on tariff headlines ('Tariff headlines broke the chip trade', 'NVDA dropping 8%, is anything safe in this selloff?'), a second day of Nvidia drama; only scattered bounce talk. Rule: sell when X sentiment on a holding turns clearly negative. Go to cash.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/x_2026-11-24_1200.md"
+            }
+          ],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)",
+          "trade_id": "x_only_2026-11-24_1200"
         }
       ],
       "history": [
@@ -1238,19 +1348,40 @@
           "decisions": [
             "HOLD: Noon: hold NVDA, keep cash. X News euphoric on Huang return (+30-35%), but posts split: many 'don't chase'/bear-market-rally calls, SPY at 200-day resistance, open SEC probe chatter. No clear new X-only setup worth chasing on a spike day."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 96.918111,
+          "decisions": [
+            "HOLD: 3 PM: hold NVDA, keep cash. X still euphoric into the close (bullish-into-close calls, TSLA +12%), but posts flag extended/reversal risk and NVDA still far below its Oct record. Not adding to a spike day."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 95.169506,
+          "decisions": [
+            "HOLD: Hold NVDA, keep $67 cash. X posts say the Nvidia euphoria is fading at the open (chips leading the pullback, profit-taking) but some call it rotation/digestion, not a reversal; sentiment cautious rather than clearly negative on NVDA, and fade warnings say keep cash back."
+          ]
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 94.273547,
+          "decisions": [
+            "SELL NVDA $27.11: Sell NVDA. X sentiment on NVDA has turned clearly negative since 10 AM: posts call it a selloff on tariff headlines ('Tariff headlines broke the chip trade', 'NVDA dropping 8%, is anything safe in this selloff?'), a second day of Nvidia drama; only scattered bounce talk. Rule: sell when X sentiment on a holding turns clearly negative. Go to cash."
+          ]
         }
       ],
       "stats": {
-        "current_value": 97.003289,
-        "return_pct": -2.997,
-        "trades": 5,
-        "closed_sells": 2,
+        "current_value": 94.273547,
+        "return_pct": -5.726,
+        "trades": 6,
+        "closed_sells": 3,
         "wins": 0,
         "win_rate": 0.0,
-        "realized_pnl": -2.838582,
-        "max_drawdown_pct": -3.054,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "realized_pnl": -5.726453,
+        "max_drawdown_pct": -5.782,
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -1599,6 +1730,43 @@
             }
           ],
           "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "90a6f8d70962eade",
+          "time": "2026-11-23T14:59:39-05:00",
+          "action": "hold",
+          "reason": "3 PM: hold TGT and cash. News: S&P ~+4.6%, Nasdaq ~+6.7% on Nvidia CEO reinstatement; big data Wednesday (PCE, GDP) and holiday week ahead. No new news-driven edge.",
+          "evidence": [
+            "Yahoo/CNBC/Fool/MarketWatch ~3 PM ET",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-23_1500.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "news_only_2026-11-24_1000",
+          "time": "2026-11-24T09:58:56-05:00",
+          "action": "hold",
+          "reason": "Hold TGT, keep cash. Published news today is a chip-led pullback after Monday's rally and a 95% Dec hike priced; no clear beat-and-raise catalyst yet (Dell, Dollar Tree, HP, Best Buy report later); nothing negative on TGT.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-24_1000.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "news_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:08-05:00",
+          "action": "hold",
+          "reason": "Hold TGT, keep cash. Midday news: chip rout and new tariff plans drag S&P/Nasdaq, but 'Dow rises as retail earnings shine'; nothing negative on TGT, and no new clear catalyst worth the cash yet.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/news_2026-11-24_1200.md"
+            }
+          ],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
         }
       ],
       "history": [
@@ -1747,19 +1915,40 @@
           "decisions": [
             "HOLD: Noon: hold TGT and cash. News: huge relief rally on Nvidia CEO reinstatement, but flash PMIs at 3-4 month lows, 10Y ~4.95%, and big data Wednesday (PCE, GDP) before the holiday. Not buying a gap-up on headline relief."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 100.768171,
+          "decisions": [
+            "HOLD: 3 PM: hold TGT and cash. News: S&P ~+4.6%, Nasdaq ~+6.7% on Nvidia CEO reinstatement; big data Wednesday (PCE, GDP) and holiday week ahead. No new news-driven edge."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 101.922356,
+          "decisions": [
+            "HOLD: Hold TGT, keep cash. Published news today is a chip-led pullback after Monday's rally and a 95% Dec hike priced; no clear beat-and-raise catalyst yet (Dell, Dollar Tree, HP, Best Buy report later); nothing negative on TGT."
+          ]
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 102.272378,
+          "decisions": [
+            "HOLD: Hold TGT, keep cash. Midday news: chip rout and new tariff plans drag S&P/Nasdaq, but 'Dow rises as retail earnings shine'; nothing negative on TGT, and no new clear catalyst worth the cash yet."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.446945,
-        "return_pct": 0.447,
+        "current_value": 102.272378,
+        "return_pct": 2.272,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.662048,
         "max_drawdown_pct": -1.624,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -2087,6 +2276,43 @@
             }
           ],
           "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "744f436b818a4134",
+          "time": "2026-11-23T14:59:39-05:00",
+          "action": "hold",
+          "reason": "Formula applied once a day at the 10 AM run; no change at 3 PM.",
+          "evidence": [
+            "daily_stats 3 PM",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-23_1500.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "technical_trend_only_2026-11-24_1000",
+          "time": "2026-11-24T09:58:56-05:00",
+          "action": "hold",
+          "reason": "Daily formula (first run Nov 24): eligible (close>200d, 50d>200d): XLP r63 +6.1, XLV +5.5, XLE -2.9, XLF -3.5. Top 2 = XLP, XLV (already held). SPY 719.8 below 200d 733.0, risk-off: 30% each, 40% cash. No target change, hold.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-24_1000.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "technical_trend_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:09-05:00",
+          "action": "hold",
+          "reason": "Formula already applied once today (10 AM): XLP, XLV top 2, SPY below 200d so 30% each and 40% cash. Not reapplied intraday; hold.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-24_1200.json"
+            }
+          ],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
         }
       ],
       "history": [
@@ -2235,19 +2461,40 @@
           "decisions": [
             "HOLD: Formula is applied once a day at the first run (10 AM); no change at noon. XLP and XLV still above 200-day with 50>200."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 99.149448,
+          "decisions": [
+            "HOLD: Formula applied once a day at the 10 AM run; no change at 3 PM."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 100.073911,
+          "decisions": [
+            "HOLD: Daily formula (first run Nov 24): eligible (close>200d, 50d>200d): XLP r63 +6.1, XLV +5.5, XLE -2.9, XLF -3.5. Top 2 = XLP, XLV (already held). SPY 719.8 below 200d 733.0, risk-off: 30% each, 40% cash. No target change, hold."
+          ]
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 100.431851,
+          "decisions": [
+            "HOLD: Formula already applied once today (10 AM): XLP, XLV top 2, SPY below 200d so 30% each and 40% cash. Not reapplied intraday; hold."
+          ]
         }
       ],
       "stats": {
-        "current_value": 99.046414,
-        "return_pct": -0.954,
+        "current_value": 100.431851,
+        "return_pct": 0.432,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.705,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -2579,6 +2826,43 @@
             }
           ],
           "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "1929087a713891ed",
+          "time": "2026-11-23T14:59:39-05:00",
+          "action": "hold",
+          "reason": "3 PM: hold COST and AAPL. COST 1099 above 20/50/200-day, r63 +14.5%, near 52w high; AAPL 350 above its 20-day 348 with 50>200. SPY/QQQ still below 20/50-day after the gap; no clean new setup.",
+          "evidence": [
+            "daily_stats 3 PM",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-23_1500.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "pattern_matching_only_2026-11-24_1000",
+          "time": "2026-11-24T09:58:57-05:00",
+          "action": "hold",
+          "reason": "Hold COST and AAPL. AAPL 353.3 near its 52w high 356.3, above 20/50/200d, holding up while QQQ falls (relative strength). COST 1084.8 above 20d 1066.7 and 50d 994, ~2.6% off its 1113.7 high, uptrend intact, well inside the 7% exit.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-24_1000.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "pattern_matching_only_2026-11-24_1200",
+          "time": "2026-11-24T12:04:09-05:00",
+          "action": "hold",
+          "reason": "Hold COST and AAPL. AAPL 351.5 above 20/50/200d, ~1.4% off its 356.3 high, still showing relative strength while QQQ falls. COST 1091.6 above 20d 1067 and 50d 994, ~2% off its 1113.7 high; uptrends intact, well inside the 7% exit.",
+          "evidence": [
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/daily_stats_2026-11-24_1200.json"
+            }
+          ],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
         }
       ],
       "history": [
@@ -2727,19 +3011,40 @@
           "decisions": [
             "HOLD: Noon: hold COST and AAPL. COST 1093 above 20/50/200-day, steady uptrend (r63 +13.9%); AAPL 348 sitting on its 20-day with 50>200, no breakdown. Index ETFs gapped +5-15% but remain below 20/50-day, a one-day spike inside a downtrend; not chasing."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 99.76791,
+          "decisions": [
+            "HOLD: 3 PM: hold COST and AAPL. COST 1099 above 20/50/200-day, r63 +14.5%, near 52w high; AAPL 350 above its 20-day 348 with 50>200. SPY/QQQ still below 20/50-day after the gap; no clean new setup."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 99.482252,
+          "decisions": [
+            "HOLD: Hold COST and AAPL. AAPL 353.3 near its 52w high 356.3, above 20/50/200d, holding up while QQQ falls (relative strength). COST 1084.8 above 20d 1066.7 and 50d 994, ~2.6% off its 1113.7 high, uptrend intact, well inside the 7% exit."
+          ]
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 99.611068,
+          "decisions": [
+            "HOLD: Hold COST and AAPL. AAPL 351.5 above 20/50/200d, ~1.4% off its 356.3 high, still showing relative strength while QQQ falls. COST 1091.6 above 20d 1067 and 50d 994, ~2% off its 1113.7 high; uptrends intact, well inside the 7% exit."
+          ]
         }
       ],
       "stats": {
-        "current_value": 99.395354,
-        "return_pct": -0.605,
+        "current_value": 99.611068,
+        "return_pct": -0.389,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.332,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -2752,13 +3057,13 @@
       "rules_md": "# Research desk\n\n**Allowed input:** the same Reddit (ApeWisdom), X, news, trend, and pattern evidence the other experiment lines already gather, plus SEC EDGAR recent filings (`data.sec.gov` submissions) and the earnings/macro calendar (Yahoo earnings dates and the Fed FOMC calendar) when those are reachable without keys. Prices are used for sizing, marking, trend, and pattern stats. The thesis and Bear check are written from a fixed scoring rule, not a model.\n\n**Not allowed:** crypto, margin, shorts, options, leveraged or inverse ETFs, paid APIs, secrets, or any backfilled history from before this line opened.\n\n**Universe (from Nov 20, 2026):** chips NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, SMH; large caps AAPL, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, COST, WMT, PG, KO, HD; broad and sector ETFs SPY, QQQ, XLP, XLV, XLE, XLF. Nov 18 to 20 the line could only buy the eight chip names. During the Nov 2026 chip selloff every one of them failed the trend veto, so the desk sat in cash with no chance to find a passing name elsewhere. Same playbook, same scoring and trend veto; only the list is wider. Not backfilled; applies from the next live run after the change. Chips measure relative strength against SMH, everything else against SPY. ETFs skip EDGAR filings and earnings dates (fund trusts have neither).\n\n**Nov 20, 2026 input fixes:** the desk had been reading a Nov 18 `x_news_*` file as its X evidence (name sorting put it after the hourly `x_<date>` files), and Nov 19 ApeWisdom data because newer hourly Reddit files were saved as `.txt` tables. Hourly files are now picked by the timestamp in their name, both Reddit formats are read, and anything older than 6 hours is logged as stale and not used (stale Reddit and price stats are refetched live; stale X or news is left out). Yahoo earnings dates now use Yahoo's keyless cookie plus crumb flow (the old URL started returning 401) and are cached once per day.\n\n**Playbook:**\n- Start with $100 cash on Nov 18, 2026. Do not backfill earlier hours. The first buy-or-hold decision is at the next live hourly run (weekdays 10 AM to 3 PM ET).\n- For each name, write a short bull thesis from the evidence, then a skeptic (\"Bear\") check. If the Bear check fails, do not buy that name. If fewer than two names pass, hold cash (and sell holdings that no longer pass, when sellable).\n- Target 2 to 3 positions at about 30-40% each (38% each for two names, 32% each for three). At most 3 trades a day. Do not trim a name that is still a target.\n- Save every thesis and Bear check under `evidence/research_desk/` so the reasoning can be audited later.\n- If a source fails, log the failure and continue. Never crash the hourly run, invent a price, or place a real order.\n\nThe hourly command `python3 run_experiments.py run` (and the noon `run --publish`) already runs this playbook during the live window; no routine change is required.\n## Rules every portfolio follows\n- Pretend money, real prices. $100 start. Never place a real order or touch a real brokerage.\n- Stocks and ETFs only. No leveraged or inverse ETFs, no crypto or crypto-linked funds, no margin, shorts, or options.\n- Cash account, T+1 settlement on bank business days (sale proceeds settle at 9:30 AM ET the next bank and market day). Buying with unsettled proceeds is allowed, but a position bought with unsettled money cannot be sold until that money settles (no good-faith violations). The script enforces this.\n- At most 3 trades per portfolio per day; prefer 0 to 2 per run. Fresh quotes only (bar no older than 20 minutes, pre, regular, or post session). Skip weekends and market holidays.\n- Every decision, including a hold, is logged with the reason and the evidence the portfolio was allowed to see.\n- The runner must not use any input outside this portfolio's allowed source when deciding. Prices are always allowed for sizing and marking, but only the trend and pattern portfolios may use price history as a signal.\n",
       "start_time": "2026-11-18T17:25:39-05:00",
       "starting_cash": 100.0,
-      "cash": 3.543807,
+      "cash": 3.468111,
       "settled_cash": 0.0,
       "unsettled": [
         {
-          "amount": 3.543807,
-          "source": "XLP sale 2026-11-23T10:02:16-05:00",
-          "settles": "2026-11-24T09:30:00-05:00"
+          "amount": 3.468111,
+          "source": "BRK-B sale 2026-11-24T12:04:35-05:00",
+          "settles": "2026-11-25T09:30:00-05:00"
         }
       ],
       "positions": [
@@ -2775,10 +3080,10 @@
           "avg_price": 345.5299987792969
         },
         {
-          "symbol": "BRK-B",
-          "shares": 0.05568330743970057,
-          "cost": 31.84,
-          "avg_price": 571.8051147460938
+          "symbol": "XLP",
+          "shares": 0.3495335202140468,
+          "cost": 32.22,
+          "avg_price": 92.18000030517578
         }
       ],
       "trades": [
@@ -2964,6 +3269,79 @@
             }
           ],
           "earliest_sell": "2026-11-24T09:30:00-05:00"
+        },
+        {
+          "id": "rd-2026-11-24T12-sell-BRK-B",
+          "time": "2026-11-24T12:04:35-05:00",
+          "symbol": "BRK-B",
+          "price": 577.27001953125,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-24 12:04 ET",
+          "quote_time": "2026-11-24T12:04:39-05:00",
+          "session": "regular",
+          "reason": "Sell BRK-B: ",
+          "evidence": [
+            "Targets: AAPL, PG, XLP at ~32% each. Sell BRK-B; Buy XLP (~32%)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md"
+            },
+            "news: news_2026-11-24_1200.md (4 min old)",
+            "x: x_2026-11-24_1200.md (4 min old)",
+            "trend/pattern daily stats: daily_stats_2026-11-24_1200.json (4 min old)",
+            "reddit/apewisdom: live fetch 12:04 ET (saved apewisdom_live_2026-11-24_1204.json)",
+            "yahoo daily stats (23 live): AMD, AMAT, TSM, ASML, AVGO, MU, SMH, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, WMT, PG, KO, HD, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 23 fetched now, rest from earnings_2026-11-24.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "side": "sell",
+          "shares": 0.05568330743970057,
+          "amount": 32.144304,
+          "cost_basis": 31.84,
+          "realized_pnl": 0.304304,
+          "proceeds_settle": "2026-11-25T09:30:00-05:00"
+        },
+        {
+          "id": "rd-2026-11-24T12-buy-XLP",
+          "time": "2026-11-24T12:04:35-05:00",
+          "symbol": "XLP",
+          "price": 92.18000030517578,
+          "quote_source": "Yahoo Finance chart API 1m (regular), bar 2026-11-24 12:04 ET",
+          "quote_time": "2026-11-24T12:04:36-05:00",
+          "session": "regular",
+          "reason": "Buy XLP (~32%): XLP buy case: Trend: close 92.17 and 50-day above the 200-day (85.06); Trend: 3-month return 6.8%; Trend: 1-month return 4.8%; Pattern: holding near the 52-week high (-0.5%); Pattern: 1-month return 4.8% ahead of SPY -6.6%. XLP Bear check: no hard red flags in the available evidence. Verdict: PASS: bull points clear the skeptic margin and no veto fired.",
+          "evidence": [
+            "Targets: AAPL, PG, XLP at ~32% each. Sell BRK-B; Buy XLP (~32%)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md"
+            },
+            "news: news_2026-11-24_1200.md (4 min old)",
+            "x: x_2026-11-24_1200.md (4 min old)",
+            "trend/pattern daily stats: daily_stats_2026-11-24_1200.json (4 min old)",
+            "reddit/apewisdom: live fetch 12:04 ET (saved apewisdom_live_2026-11-24_1204.json)",
+            "yahoo daily stats (23 live): AMD, AMAT, TSM, ASML, AVGO, MU, SMH, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, WMT, PG, KO, HD, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 23 fetched now, rest from earnings_2026-11-24.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "side": "buy",
+          "shares": 0.3495335202140468,
+          "amount": 32.22,
+          "funding": [
+            {
+              "amount": 3.543807,
+              "settled": true
+            },
+            {
+              "amount": 28.676193,
+              "settled": false,
+              "settles": "2026-11-25T09:30:00-05:00"
+            }
+          ],
+          "earliest_sell": "2026-11-25T09:30:00-05:00"
         }
       ],
       "decisions": [
@@ -3381,6 +3759,87 @@
           "by": "research_desk",
           "slot": "2026-11-23T12",
           "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-23_1206.md"
+        },
+        {
+          "id": "rd-2026-11-23T14-hold",
+          "time": "2026-11-23T14:59:40-05:00",
+          "action": "hold",
+          "reason": "Hold BRK-B, AAPL, PG: targets unchanged (BRK-B, AAPL, PG at ~32% each).",
+          "evidence": [
+            "Hold BRK-B, AAPL, PG: targets unchanged (BRK-B, AAPL, PG at ~32% each).",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-23_1459.md"
+            },
+            "news: news_2026-11-23_1500.md (0 min old)",
+            "x: x_2026-11-23_1500.md (0 min old)",
+            "trend/pattern daily stats: daily_stats_2026-11-23_1500.json (0 min old)",
+            "reddit/apewisdom: live fetch 14:59 ET (saved apewisdom_live_2026-11-23_1459.json)",
+            "yahoo daily stats (17 live): NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, GOOGL, AMZN, META, V, UNH, LLY, XOM, PG, KO, HD",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 0 fetched now, rest from earnings_2026-11-23.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2026-10-28, AMZN 2026-10-29, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2026-10-29, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-21, KO 2026-10-27, HD 2026-11-17",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09",
+            "macro caution from news/X wording"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-23T14",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-23_1459.md"
+        },
+        {
+          "id": "rd-2026-11-24T12-sell-BRK-B",
+          "time": "2026-11-24T12:04:35-05:00",
+          "action": "sell",
+          "reason": "Sell BRK-B: ",
+          "evidence": [
+            "Targets: AAPL, PG, XLP at ~32% each. Sell BRK-B; Buy XLP (~32%)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md"
+            },
+            "news: news_2026-11-24_1200.md (4 min old)",
+            "x: x_2026-11-24_1200.md (4 min old)",
+            "trend/pattern daily stats: daily_stats_2026-11-24_1200.json (4 min old)",
+            "reddit/apewisdom: live fetch 12:04 ET (saved apewisdom_live_2026-11-24_1204.json)",
+            "yahoo daily stats (23 live): AMD, AMAT, TSM, ASML, AVGO, MU, SMH, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, WMT, PG, KO, HD, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 23 fetched now, rest from earnings_2026-11-24.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-24T12",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md",
+          "trade_id": "rd-2026-11-24T12-sell-BRK-B"
+        },
+        {
+          "id": "rd-2026-11-24T12-buy-XLP",
+          "time": "2026-11-24T12:04:35-05:00",
+          "action": "buy",
+          "reason": "Buy XLP (~32%): XLP buy case: Trend: close 92.17 and 50-day above the 200-day (85.06); Trend: 3-month return 6.8%; Trend: 1-month return 4.8%; Pattern: holding near the 52-week high (-0.5%); Pattern: 1-month return 4.8% ahead of SPY -6.6%. XLP Bear check: no hard red flags in the available evidence. Verdict: PASS: bull points clear the skeptic margin and no veto fired.",
+          "evidence": [
+            "Targets: AAPL, PG, XLP at ~32% each. Sell BRK-B; Buy XLP (~32%)",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md"
+            },
+            "news: news_2026-11-24_1200.md (4 min old)",
+            "x: x_2026-11-24_1200.md (4 min old)",
+            "trend/pattern daily stats: daily_stats_2026-11-24_1200.json (4 min old)",
+            "reddit/apewisdom: live fetch 12:04 ET (saved apewisdom_live_2026-11-24_1204.json)",
+            "yahoo daily stats (23 live): AMD, AMAT, TSM, ASML, AVGO, MU, SMH, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, WMT, PG, KO, HD, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 23 fetched now, rest from earnings_2026-11-24.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-24T12",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-24_1204.md",
+          "trade_id": "rd-2026-11-24T12-buy-XLP"
         }
       ],
       "history": [
@@ -3478,19 +3937,39 @@
           "decisions": [
             "HOLD: Hold BRK-B, AAPL, PG: targets unchanged (BRK-B, AAPL, PG at ~32% each)."
           ]
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 99.926945,
+          "decisions": [
+            "HOLD: Hold BRK-B, AAPL, PG: targets unchanged (BRK-B, AAPL, PG at ~32% each)."
+          ]
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 100.654802,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 100.683687,
+          "decisions": [
+            "SELL BRK-B $32.14: Sell BRK-B: ",
+            "BUY XLP $32.22: Buy XLP (~32%): XLP buy case: Trend: close 92.17 and 50-day above the 200-day (85.06); Trend: 3-month return 6.8%; Trend: 1-month return 4.8%; Pattern: holding near the 52-week high (-0.5%); Pattern: 1-month return 4.8% ahead of SPY -6.6%. XLP Bear check: no hard red flags in the available evidence. Verdict: PASS: bull points clear the skeptic margin and no veto fired."
+          ]
         }
       ],
       "stats": {
-        "current_value": 99.642414,
-        "return_pct": -0.358,
-        "trades": 5,
-        "closed_sells": 1,
-        "wins": 0,
-        "win_rate": 0.0,
-        "realized_pnl": -0.616193,
+        "current_value": 100.683687,
+        "return_pct": 0.684,
+        "trades": 7,
+        "closed_sells": 2,
+        "wins": 1,
+        "win_rate": 50.0,
+        "realized_pnl": -0.311889,
         "max_drawdown_pct": -0.494,
-        "snapshots": 14,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 17,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -3661,19 +4140,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 98.458186,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 98.398257,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 97.991694,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 97.346095,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 98.458186,
-        "return_pct": -1.542,
+        "current_value": 97.346095,
+        "return_pct": -2.654,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -5.769,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -3844,19 +4338,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 101.956638,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 101.044929,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 101.477269,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 98.507051,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 101.956638,
-        "return_pct": 1.957,
+        "current_value": 98.507051,
+        "return_pct": -1.493,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -10.825,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -4027,19 +4536,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 95.999721,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 94.368326,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 91.089006,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 88.607286,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 95.999721,
-        "return_pct": -4.0,
+        "current_value": 88.607286,
+        "return_pct": -11.393,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -11.514,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "max_drawdown_pct": -13.205,
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -4210,19 +4734,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 100.350355,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 100.136245,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 99.030324,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 98.074815,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.350355,
-        "return_pct": 0.35,
+        "current_value": 98.074815,
+        "return_pct": -1.925,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -7.939,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -4393,19 +4932,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 96.311918,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 96.711924,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 96.706242,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 94.904238,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 96.311918,
-        "return_pct": -3.688,
+        "current_value": 94.904238,
+        "return_pct": -5.096,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -9.537,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -4576,19 +5130,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 104.106073,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 103.808922,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 97.708755,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 94.583754,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 104.106073,
-        "return_pct": 4.106,
+        "current_value": 94.583754,
+        "return_pct": -5.416,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -19.351,
-        "snapshots": 21,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "snapshots": 24,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     },
     {
@@ -4689,19 +5258,34 @@
           "time": "2026-11-23T12:06:09-05:00",
           "value": 100.206186,
           "decisions": []
+        },
+        {
+          "time": "2026-11-23T14:59:40-05:00",
+          "value": 97.978237,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T09:59:01-05:00",
+          "value": 93.550968,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-24T12:04:35-05:00",
+          "value": 88.270213,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 100.206186,
-        "return_pct": 0.206,
+        "current_value": 88.270213,
+        "return_pct": -11.73,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
-        "max_drawdown_pct": -3.416,
-        "snapshots": 7,
-        "as_of": "2026-11-23T12:06:09-05:00"
+        "max_drawdown_pct": -13.716,
+        "snapshots": 10,
+        "as_of": "2026-11-24T12:04:35-05:00"
       }
     }
   ],
@@ -5082,9 +5666,27 @@
           "value": 97.954471,
           "era": "Week 2 (Nov 17-24)",
           "note": "Noon run (Mon): hold. BRK-B 573.575 (-2.9%), XLP 90.245 (-2.1%) vs cost, inside 7%/6% trailing stops; XLP recovered from ~-2.7% at 10 AM as healthcare/staples became the biggest gainers from the open. Market: S&P ~+5%, Nasdaq ~+7%, NVDA +34"
+        },
+        {
+          "time": "2026-11-23T15:00:00-05:00",
+          "value": 98.076029,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "3 PM run (Mon): hold. BRK-B 573.70 (-2.9%), XLP 90.54 (-1.75%) vs cost, inside 7%/6% trailing stops; XLP kept recovering through the afternoon. Market still ~S&P +4.6%, Nasdaq +6.7% on Nvidia's Huang reinstatement; under a day to the noon T"
+        },
+        {
+          "time": "2026-11-24T09:58:00-05:00",
+          "value": 98.796221,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "10 AM run (Tue, final morning): hold. BRK-B 578.12 (-2.2%), XLP 91.55 (-0.7%) vs cost, inside 7%/6% trailing stops; defensives bouncing as the Nvidia rally fades (S&P ~-1%, Nasdaq ~-1.5%, NVDA ~-5%, chips lead the drop; Dec hike odds back t"
+        },
+        {
+          "time": "2026-11-24T12:04:27-05:00",
+          "value": 98.950223,
+          "era": "Week 2 (Nov 17-24)",
+          "note": "FINAL noon run. Scoring liquidation of BRK-B at 577.12 and XLP at 92.15. Final total 98.95 vs 100 start (-1.05%), 2 counted trades, 0 GFVs. Team Nicole last reported 98.10 (Mon noon) on 4 trades; awaiting their final. Community signal: X ca"
         }
       ],
-      "trades": 2,
+      "trades": 4,
       "note": "From the main game ledgers (hourly marks). Weekly reset to $100 each Tuesday noon ET."
     },
     {
@@ -5189,45 +5791,45 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-23T12:06:09-05:00",
-    "trading_days": 4,
+    "as_of": "2026-11-24T12:04:35-05:00",
+    "trading_days": 5,
     "lines": [
-      "Leader so far: News only at +0.45% ($100.45).",
-      "Trailing: Reddit only at -4.64% ($95.36).",
-      "Beating the SPY buy-and-hold benchmark (-1.54%): 4 of 6 (News only, Trend rules only, Pattern matching only, Research desk).",
+      "Leader so far: News only at +2.27% ($102.27).",
+      "Trailing: Reddit only at -14.98% ($85.02).",
+      "Beating the SPY buy-and-hold benchmark (-2.65%): 4 of 6 (News only, Trend rules only, Pattern matching only, Research desk).",
       "Best win rate on closed sells: Reddit only (1/2)."
     ],
-    "verdict": "Too early to reweight signals: 4 trading day(s) of data; the plan is to wait for at least 15.",
+    "verdict": "Too early to reweight signals: 5 trading day(s) of data; the plan is to wait for at least 15.",
     "ranking": [
       {
         "id": "news_only",
         "name": "News only",
-        "return_pct": 0.447
+        "return_pct": 2.272
       },
       {
         "id": "research_desk",
         "name": "Research desk",
-        "return_pct": -0.358
-      },
-      {
-        "id": "pattern_matching_only",
-        "name": "Pattern matching only",
-        "return_pct": -0.605
+        "return_pct": 0.684
       },
       {
         "id": "technical_trend_only",
         "name": "Trend rules only",
-        "return_pct": -0.954
+        "return_pct": 0.432
+      },
+      {
+        "id": "pattern_matching_only",
+        "name": "Pattern matching only",
+        "return_pct": -0.389
       },
       {
         "id": "x_only",
         "name": "X only",
-        "return_pct": -2.997
+        "return_pct": -5.726
       },
       {
         "id": "reddit_only",
         "name": "Reddit only",
-        "return_pct": -4.639
+        "return_pct": -14.983
       }
     ]
   }
