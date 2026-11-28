@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:06:25-05:00",
+  "generated_at": "2026-11-27T15:01:26-05:00",
   "experiment_start": "2026-11-18T08:12:35-05:00",
   "game_weeks": [
     {
@@ -657,6 +657,30 @@
           "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
           "evidence": [],
           "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "b7e6ea86eb0faf21",
+          "time": "2026-11-27T13:02:08-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "eb9c953b2e2f042d",
+          "time": "2026-11-27T14:00:16-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
+        },
+        {
+          "id": "1d1734379b1e279c",
+          "time": "2026-11-27T15:01:25-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Reddit chatter via ApeWisdom mention counts (r/wallstreetbets, r/stocks, r/investing and other stock subs)"
         }
       ],
       "history": [
@@ -912,19 +936,40 @@
           "decisions": [
             "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 87.169288,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 86.590213,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 86.496036,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
         }
       ],
       "stats": {
-        "current_value": 85.75018,
-        "return_pct": -14.25,
+        "current_value": 86.496036,
+        "return_pct": -13.504,
         "trades": 7,
         "closed_sells": 2,
         "wins": 1,
         "win_rate": 50.0,
         "realized_pnl": -1.408833,
         "max_drawdown_pct": -23.297,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -1474,6 +1519,30 @@
           "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
           "evidence": [],
           "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "905f4a3e79d1ecea",
+          "time": "2026-11-27T13:02:08-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "4ee75e718dadff86",
+          "time": "2026-11-27T14:00:16-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
+        },
+        {
+          "id": "9749cbbe5535fdf9",
+          "time": "2026-11-27T15:01:26-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Public X posts and X News stories (Grok Bot x namespace: search_posts_all, search_news)"
         }
       ],
       "history": [
@@ -1727,6 +1796,27 @@
           "decisions": [
             "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 94.273547,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 94.273547,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 94.273547,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
         }
       ],
       "stats": {
@@ -1738,8 +1828,8 @@
         "win_rate": 0.0,
         "realized_pnl": -5.726453,
         "max_drawdown_pct": -5.782,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -2223,6 +2313,30 @@
           "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
           "evidence": [],
           "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "59e4800a9887ae65",
+          "time": "2026-11-27T13:02:08-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "61235d58776b1c34",
+          "time": "2026-11-27T14:00:16-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
+        },
+        {
+          "id": "e52ff4e85fd8590c",
+          "time": "2026-11-27T15:01:26-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Published financial news headlines and articles (web search: CNBC, Investing.com, StockAnalysis, Reuters, etc.)"
         }
       ],
       "history": [
@@ -2476,19 +2590,40 @@
           "decisions": [
             "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 101.494799,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 101.382369,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 101.408399,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
         }
       ],
       "stats": {
-        "current_value": 101.490367,
-        "return_pct": 1.49,
+        "current_value": 101.408399,
+        "return_pct": 1.408,
         "trades": 3,
         "closed_sells": 1,
         "wins": 0,
         "win_rate": 0.0,
         "realized_pnl": -1.662048,
         "max_drawdown_pct": -1.624,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -2951,6 +3086,30 @@
           "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
           "evidence": [],
           "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "0ad7fc92dc13c7e4",
+          "time": "2026-11-27T13:02:08-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "9ecd1bb8a3884d44",
+          "time": "2026-11-27T14:00:16-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
+        },
+        {
+          "id": "18257ffed34ac3e4",
+          "time": "2026-11-27T15:01:26-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Mechanical moving-average and momentum rules on daily closes (Yahoo Finance), including S&P 500 vs its 200-day average"
         }
       ],
       "history": [
@@ -3204,19 +3363,40 @@
           "decisions": [
             "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 100.581642,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 100.522076,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 100.586236,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.594282,
-        "return_pct": 0.594,
+        "current_value": 100.586236,
+        "return_pct": 0.586,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.705,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -3683,6 +3863,30 @@
           "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
           "evidence": [],
           "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "fa2fb0606d250e5d",
+          "time": "2026-11-27T13:02:09-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "a584d36b1fe61eb2",
+          "time": "2026-11-27T14:00:17-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
+        },
+        {
+          "id": "f494deb031669a2c",
+          "time": "2026-11-27T15:01:26-05:00",
+          "action": "hold",
+          "reason": "Hourly hold: no fresh signal from this source alone; conservative.",
+          "evidence": [],
+          "source": "Scorpy's own reading of price and volume history (charts) with no news, no chatter, and no fixed formula"
         }
       ],
       "history": [
@@ -3936,19 +4140,40 @@
           "decisions": [
             "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 100.465581,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 100.419484,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 100.466378,
+          "decisions": [
+            "HOLD: Hourly hold: no fresh signal from this source alone; conservative."
+          ]
         }
       ],
       "stats": {
-        "current_value": 100.306845,
-        "return_pct": 0.307,
+        "current_value": 100.466378,
+        "return_pct": 0.466,
         "trades": 2,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -1.415,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -5092,6 +5317,75 @@
           "by": "research_desk",
           "slot": "2026-11-27T12",
           "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1206.md"
+        },
+        {
+          "id": "rd-2026-11-27T13-hold",
+          "time": "2026-11-27T13:02:09-05:00",
+          "action": "hold",
+          "reason": "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+          "evidence": [
+            "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1302.md"
+            },
+            "reddit/apewisdom: live fetch 13:02 ET (saved apewisdom_live_2026-11-27_1302.json)",
+            "yahoo daily stats (30 live): NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, SMH, AAPL, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, COST, WMT, PG, KO, HD, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 0 fetched now, rest from earnings_2026-11-27.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-27T13",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1302.md"
+        },
+        {
+          "id": "rd-2026-11-27T14-hold",
+          "time": "2026-11-27T14:00:17-05:00",
+          "action": "hold",
+          "reason": "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+          "evidence": [
+            "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1400.md"
+            },
+            "reddit/apewisdom: live fetch 14:00 ET (saved apewisdom_live_2026-11-27_1400.json)",
+            "yahoo daily stats (30 live): NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, SMH, AAPL, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, COST, WMT, PG, KO, HD, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 0 fetched now, rest from earnings_2026-11-27.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-27T14",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1400.md"
+        },
+        {
+          "id": "rd-2026-11-27T15-hold",
+          "time": "2026-11-27T15:01:26-05:00",
+          "action": "hold",
+          "reason": "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+          "evidence": [
+            "Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each).",
+            {
+              "file": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1501.md"
+            },
+            "reddit/apewisdom: live fetch 15:01 ET (saved apewisdom_live_2026-11-27_1501.json)",
+            "yahoo daily stats (30 live): NVDA, AMD, AMAT, TSM, ASML, AVGO, MU, SMH, AAPL, MSFT, GOOGL, AMZN, META, BRK-B, JPM, V, UNH, LLY, XOM, COST, WMT, PG, KO, HD, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "EDGAR and earnings skipped for ETFs (fund trusts have no company filings or earnings): SMH, SPY, QQQ, XLP, XLV, XLE, XLF",
+            "SEC company ticker map",
+            "EDGAR submissions (23/23): NVDA (CIK 0001045810), AMD (CIK 0000002488), AMAT (CIK 0000006951), TSM (CIK 0001046179), ASML (CIK 0000937966), AVGO (CIK 0001730168), MU (CIK 0000723125), AAPL (CIK 0000320193), MSFT (CIK 0000789019), GOOGL (CIK 0001652044), AMZN (CIK 0001018724), META (CIK 0001326801), BRK-B (CIK 0001067983), JPM (CIK 0000019617), V (CIK 0001403161), UNH (CIK 0000731766), LLY (CIK 0000059478), XOM (CIK 0002115436), COST (CIK 0000909832), WMT (CIK 0000104169), PG (CIK 0000080424), KO (CIK 0000021344), HD (CIK 0000354950)",
+            "Yahoo earnings calendar (23/23 stocks dated; 0 fetched now, rest from earnings_2026-11-27.json): NVDA 2026-11-17, AMD 2027-02-02, AMAT 2027-02-11, TSM 2027-01-14, ASML 2027-01-27, AVGO 2026-12-09, MU 2026-12-17, AAPL 2027-01-28, MSFT 2027-01-27, GOOGL 2027-02-03, AMZN 2027-02-04, META 2027-01-27, BRK-B 2026-11-09, JPM 2027-01-14, V 2027-01-26, UNH 2027-01-12, LLY 2027-02-03, XOM 2027-01-29, COST 2026-12-10, WMT 2027-02-18, PG 2027-01-22, KO 2027-02-09, HD 2027-02-23",
+            "FOMC calendar: 2026-01-28, 2026-03-18, 2026-04-29, 2026-06-17, 2026-07-29, 2026-09-16, 2026-10-28, 2026-12-09"
+          ],
+          "source": "Combined Reddit, X, news, trend and pattern evidence, plus SEC EDGAR filings and the earnings/macro calendar when reachable without keys. Buys only after a written bull thesis and a passing Bear (skeptic) check.",
+          "by": "research_desk",
+          "slot": "2026-11-27T15",
+          "thesis_log": "/workspace/paper-trading/experiments/evidence/research_desk/2026-11-27_1501.md"
         }
       ],
       "history": [
@@ -5292,19 +5586,40 @@
           "decisions": [
             "HOLD: Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each)."
           ]
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 101.710842,
+          "decisions": [
+            "HOLD: Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each)."
+          ]
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 101.642709,
+          "decisions": [
+            "HOLD: Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each)."
+          ]
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 101.679562,
+          "decisions": [
+            "HOLD: Hold AAPL, COST, PG: targets unchanged (AAPL, COST, PG at ~32% each)."
+          ]
         }
       ],
       "stats": {
-        "current_value": 101.536643,
-        "return_pct": 1.537,
+        "current_value": 101.679562,
+        "return_pct": 1.68,
         "trades": 9,
         "closed_sells": 3,
         "wins": 2,
         "win_rate": 66.7,
         "realized_pnl": -0.130133,
         "max_drawdown_pct": -0.494,
-        "snapshots": 29,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 32,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -5550,19 +5865,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 98.87224,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 99.150095,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 99.19274,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 99.293108,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 98.87224,
-        "return_pct": -1.128,
+        "current_value": 99.293108,
+        "return_pct": -0.707,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -5.769,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -5808,19 +6138,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 104.187562,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 104.818939,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 104.067346,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 104.101358,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 104.187562,
-        "return_pct": 4.188,
+        "current_value": 104.101358,
+        "return_pct": 4.101,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -10.825,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -6066,19 +6411,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 92.361502,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 93.933633,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 92.976659,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 93.025872,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 92.361502,
-        "return_pct": -7.638,
+        "current_value": 93.025872,
+        "return_pct": -6.974,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -19.889,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -6324,19 +6684,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 96.730009,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 97.250239,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 97.3276,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 97.405953,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 96.730009,
-        "return_pct": -3.27,
+        "current_value": 97.405953,
+        "return_pct": -2.594,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -9.914,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -6582,19 +6957,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 101.399592,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 101.837576,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 101.617988,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 101.54476,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 101.399592,
-        "return_pct": 1.4,
+        "current_value": 101.54476,
+        "return_pct": 1.545,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -9.537,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -6840,19 +7230,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 93.032221,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 94.32673,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 93.749687,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 93.781344,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 93.032221,
-        "return_pct": -6.968,
+        "current_value": 93.781344,
+        "return_pct": -6.219,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -19.351,
-        "snapshots": 36,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 39,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     },
     {
@@ -7028,19 +7433,34 @@
           "time": "2026-11-27T12:06:25-05:00",
           "value": 104.879719,
           "decisions": []
+        },
+        {
+          "time": "2026-11-27T13:02:09-05:00",
+          "value": 104.810993,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T14:00:17-05:00",
+          "value": 104.352803,
+          "decisions": []
+        },
+        {
+          "time": "2026-11-27T15:01:26-05:00",
+          "value": 104.519355,
+          "decisions": []
         }
       ],
       "stats": {
-        "current_value": 104.879719,
-        "return_pct": 4.88,
+        "current_value": 104.519355,
+        "return_pct": 4.519,
         "trades": 1,
         "closed_sells": 0,
         "wins": 0,
         "win_rate": null,
         "realized_pnl": 0.0,
         "max_drawdown_pct": -13.716,
-        "snapshots": 22,
-        "as_of": "2026-11-27T12:06:25-05:00"
+        "snapshots": 25,
+        "as_of": "2026-11-27T15:01:26-05:00"
       }
     }
   ],
@@ -7505,6 +7925,30 @@
           "value": 100.0,
           "era": "Week 3 (Nov 24-Dec 1)",
           "note": "Hold: all cash, no trade (conservative)"
+        },
+        {
+          "time": "2026-11-27T12:06:40-05:00",
+          "value": 100.0,
+          "era": "Week 3 (Nov 24-Dec 1)",
+          "note": "Hold: all cash, no trade (conservative)"
+        },
+        {
+          "time": "2026-11-27T13:02:18-05:00",
+          "value": 100.0,
+          "era": "Week 3 (Nov 24-Dec 1)",
+          "note": "Hold: all cash, no trade (conservative)"
+        },
+        {
+          "time": "2026-11-27T14:00:26-05:00",
+          "value": 100.0,
+          "era": "Week 3 (Nov 24-Dec 1)",
+          "note": "Hold: all cash, no trade (conservative)"
+        },
+        {
+          "time": "2026-11-27T15:01:36-05:00",
+          "value": 100.0,
+          "era": "Week 3 (Nov 24-Dec 1)",
+          "note": "Hold: all cash, no trade (conservative)"
         }
       ],
       "trades": 0,
@@ -7612,6 +8056,13 @@
           "era": "Week 3 (Nov 24-28)",
           "note": "Wed noon check-in, Week 3, 3 trades, 0 GFVs; tally tied 1-1",
           "source": "Giles email 2026-11-25 12:04 PM ET (msg 15039213)"
+        },
+        {
+          "time": "2026-11-27T12:00:00-05:00",
+          "value": 98.55,
+          "era": "Week 3 (Nov 24-28)",
+          "note": "Fri noon check-in (belated), Week 3, 4 trades this week (16 rematch), no trades today, 0 GFVs; holdings XLV and SPY",
+          "source": "Giles email 2026-11-27 11:07 PM ET (msg 16285050)"
         }
       ],
       "trades": null,
@@ -7619,12 +8070,12 @@
     }
   ],
   "summary": {
-    "as_of": "2026-11-27T12:06:25-05:00",
+    "as_of": "2026-11-27T15:01:26-05:00",
     "trading_days": 7,
     "lines": [
-      "Leader so far: Research desk at +1.54% ($101.54).",
-      "Trailing: Reddit only at -14.25% ($85.75).",
-      "Beating the SPY buy-and-hold benchmark (-1.13%): 4 of 6 (News only, Trend rules only, Pattern matching only, Research desk).",
+      "Leader so far: Research desk at +1.68% ($101.68).",
+      "Trailing: Reddit only at -13.50% ($86.50).",
+      "Beating the SPY buy-and-hold benchmark (-0.71%): 4 of 6 (News only, Trend rules only, Pattern matching only, Research desk).",
       "Best win rate on closed sells: Research desk (2/3)."
     ],
     "verdict": "Too early to reweight signals: 7 trading day(s) of data; the plan is to wait for at least 15.",
@@ -7632,22 +8083,22 @@
       {
         "id": "research_desk",
         "name": "Research desk",
-        "return_pct": 1.537
+        "return_pct": 1.68
       },
       {
         "id": "news_only",
         "name": "News only",
-        "return_pct": 1.49
+        "return_pct": 1.408
       },
       {
         "id": "technical_trend_only",
         "name": "Trend rules only",
-        "return_pct": 0.594
+        "return_pct": 0.586
       },
       {
         "id": "pattern_matching_only",
         "name": "Pattern matching only",
-        "return_pct": 0.307
+        "return_pct": 0.466
       },
       {
         "id": "x_only",
@@ -7657,7 +8108,7 @@
       {
         "id": "reddit_only",
         "name": "Reddit only",
-        "return_pct": -14.25
+        "return_pct": -13.504
       }
     ]
   }
